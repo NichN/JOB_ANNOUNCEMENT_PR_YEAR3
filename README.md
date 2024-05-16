@@ -10,6 +10,7 @@ this project create for school assignment by group 9|
 
 ## dimensions
 **fontSizeExtraSmall** = 10.0;.
+
 **fontSizeSmall** = 12.0;.
 **fontSizeDefault** = 14.0;.
 **fontSizeLarge** = 16.0;.
