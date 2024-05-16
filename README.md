@@ -2,7 +2,7 @@
 this project create for school assignment by group 9|
 
 ## Main Color
-*primary color : A7727D.
+* primary color : A7727D.
 *secodary color : EDDBC7.
 *accent color : F8EAD8.
 *text color : 0C0C0C.
