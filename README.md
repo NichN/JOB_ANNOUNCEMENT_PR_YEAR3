@@ -31,8 +31,8 @@ this project create for school assignment by group 9|
 * radiusExtraLarge = 20.0;.
 
 ## style 
-* font family : Roboto.
-* font weight : 400w, 500w, 600w, 700w.
+* font family : Outfit.
+* font weight : 400w, 500w, 600w, 700w, bold.
 
 
 
