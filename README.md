@@ -2,11 +2,11 @@
 this project create for school assignment by group 9|
 
 ## Main Color
-* primary color : A7727D.<br>
-* secodary color : EDDBC7.
-* accent color : F8EAD8.
-* text color : 0C0C0C.
-* background color : F9F5E7.
+* primary color : 003370.<br>
+* primary color2 : A7727D.<br>
+* secodary color : A7727D.
+* accent color : 003370.
+* text color : CFC6C6.
 
 ## dimensions
 * fontSizeExtraSmall = 10.0;.
@@ -16,8 +16,8 @@ this project create for school assignment by group 9|
 
 * fontSizeDefault = 14.0;.
 * fontSizeLarge = 16.0;.
-* fontSizeExtraLarge = 18.0;.
-* fontSizeOverLarge = 24.0;.
+* fontSizeExtraLarge = 20.0;.
+* fontSizeOverLarge = 32.0;.
 
 * paddingSizeExtraSmall = 5.0;.
 * paddingSizeSmall = 10.0;.
