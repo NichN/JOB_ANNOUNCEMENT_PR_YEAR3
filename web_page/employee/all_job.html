@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alljob</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/indext_style.css">
+    <link rel="icon" href="../../assets/logos/logo_2.png" width="70" height="70">
+    <style>
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 150px 0 200px;
+        }
+
+        .latest {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../../assets/logos/logo_2.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="#">JOB</a>
+            <a href="web_page/employee/contact_us.html">CONTACT</a>
+            <a href="web_page/employee/about_us.html">ABOUT US</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button onclick="searchFunction()">Search</button>
+            <div class="login-logout">
+                <button style="border-radius: 0px;background-color: transparent;">Login</button>
+                <button style="border-radius: 0px;background-color: transparent;">Logout</button>
+                <div class="dropdown">
+                    <button class="profile-btn" style="background-color: transparent;">
+                        <img src="../../assets/images/profiles.png" alt="Profile Icon">
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">My Profile</a>
+                        <div class="sub-dropdown">
+                            <a href="#" class="sub-dropbtn">Post Job</a>
+                            <div class="sub-dropdown-content">
+                                <a href="#">Enterprise</a>
+                                <a href="#">Talent Pool</a>
+                            </div>
+                        </div>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner_img">
+        <img src="../../assets/images/banner.png" style="height: 400px;">
+    </div>
+    <div class="row">
+        <h5 class="latest">Sort All</h5>
+        <h5 class="latest">1200 Resume Found</h5>
+    </div>
+    <div class="grid-container" id="all-job-container"></div>
+    <script src="../../js/jobs.js"></script>
+</body>
+
+</html>
