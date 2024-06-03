@@ -4,68 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
+  <link rel="stylesheet" type="text/css" href="../../styles/indext_style.css">
+  <link rel="icon" href="../../assets/logos/logo_2.png" width="70" height="70">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    function redirectToPage(pageURL) {
+        window.location.href = pageURL;
+    }
+  </script>
   <style>
     body {
       font-family: 'Outfit', sans-serif;
-      color: #CFC6C6; /* Text color */
+      color: #CFC6C6;
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
+      overflow-x: hidden; 
     }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between; 
-      align-items: center;
-      padding: 10px 20px;
-      background-color: #003370;
-      color: white; 
-    }
-
-    .navbar .logo img {
-      display: block;
-    }
-
-    .navbar .menu {
-      display: flex;
-      gap: 20px; 
-    }
-
-    .navbar .menu a {
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      font-size: 14px; 
-    }
-
-    .navbar .menu a:hover {
-      border-radius: 5px;
-    }
-
-    .navbar .auth-buttons {
-      display: flex;
-      align-items: center;
-      gap: 10px; 
-    }
-
-    .navbar .auth-buttons a {
-      background-color: #ffffff; 
-      color: #003370;
-      padding: 10px 20px; 
-      border-radius: 5px; 
-      transition: background-color 0.3s ease; 
-      text-decoration: none;
-    }
-
-    .navbar .auth-buttons a:hover {
-      background-color: #A7727D; 
-    }
-
-    .navbar .auth-buttons img {
-      display: block;
-    }
-
 
     .about-us {
       padding: 20px;
@@ -73,6 +28,7 @@
       margin: 20px auto;
       max-width: 800px; 
       text-align: justify; 
+      overflow: hidden; 
     }
 
     .about-us img {
@@ -122,60 +78,52 @@
       font-size: 14px;
       color: #000000;
     }
-
-    .core-values p::before {
-      content: '•';
-      margin-right: 10px;
-      color: #A7727D; 
-    }
-
-    /* [class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;} */
   </style>
 </head>
 <body>
   <div class="navbar">
     <div class="logo">
-      <img src="../../assets/logos/logo_2.png" width="100" height="100">
+        <img src="../../assets/logos/logo_2.png" alt="Logo">
     </div>
     <div class="menu">
-      <a href="../../index.html">HOME</a>
-      <a href="#">JOB</a>
-      <a href="contact_us.html">CONTACT</a>
-      <a href="about_us.html">ABOUT US</a>
+        <a href="../../index.html">HOME</a>
+        <a href="all_job.html">JOB</a>
+        <a href="contact_us.html">CONTACT</a>
+        <a href="about_us.html">ABOUT US</a>
     </div>
-    <div class="auth-buttons">
-      <a href="#">Login</a>
-      <a href="#">Register</a>
-      <img src="../../assets/Icons/profile_white.png" width="70" height="70">
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button onclick="searchFunction()">Search</button>
+        <div class="login-logout">
+            <button style="border-radius: 0px;background-color: transparent;">Login</button>
+            <button style="border-radius: 0px;background-color: transparent;">Logout</button>
+            <div class="dropdown">
+                <button class="profile-btn" style="background-color: transparent;">
+                    <img src="../../assets/images/profiles.png" alt="Profile Icon">
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">My Profile</a>
+                    <div class="sub-dropdown">
+                        <a href="#" class="sub-dropbtn">Post Job</a>
+                        <div class="sub-dropdown-content">
+                            <a href="#">Enterprise</a>
+                            <a href="#">Talent Pool</a>
+                        </div>
+                    </div>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
 
   <section class="about-us">
-    <img src="../../assets/images/about_us.jpg">
+    <img src="../../assets/images/about_us.jpg" alt="About Us">
     <h2>About Us</h2>
     <div>
-      <p>Job Opportunity  is Cambodia's leading human resources and recruitment company, specializing in providing human capital resources and assets. 
-        Launched in 2024 by Job Opportunity, we have grown from specializing in online recruitment to offline, sourcing employees of all standards for businesses and organizations across the country.</p>
-      <p>Through our dedicated team of internationally-trained experts, we combine state-of-the-art technology, data analysis and a comprehensive network 
-        of partners to find the right person for your business. Calling on our well-established network of potential candidates, we conduct the screening process,
-        saving your company time while ensuring you secure the perfect person to help your business grow.</p>
-      <p>Our success and expertise has led to thousands of jobseekers using our services every month to search the more than 5,000 live job ads, and our shift to 
-        focus on providing companies with a tool to recruit the best staff possible has seen CAMHR become Cambodia's elite recruitment agency.</p>    
+      <p>Job Opportunity is Cambodia's leading human resources and recruitment company, specializing in providing human capital resources and assets. Launched in 2024 by Job Opportunity, we have grown from specializing in online recruitment to offline, sourcing employees of all standards for businesses and organizations across the country.</p>
+      <p>Through our dedicated team of internationally-trained experts, we combine state-of-the-art technology, data analysis, and a comprehensive network of partners to find the right person for your business. Calling on our well-established network of potential candidates, we conduct the screening process, saving your company time while ensuring you secure the perfect person to help your business grow.</p>
+      <p>Our success and expertise have led to thousands of job seekers using our services every month to search the more than 5,000 live job ads, and our shift to focus on providing companies with a tool to recruit the best staff possible has seen CAMHR become Cambodia's elite recruitment agency.</p>
     </div>
 
     <h5>Our Vision</h5>
@@ -197,8 +145,52 @@
     </div>
   </section>
 
-  <footer>
-
+  <footer class="footer">
+      <div class="footer-column">
+          <h3>How to Apply</h3>
+          <ul>
+              <li><a href="#">Application Process</a></li>
+              <li><a href="#">Requirements</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Deadlines</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Company</h3>
+          <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">News</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Explore</h3>
+          <ul>
+              <li><a href="#">Programs</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Resources</a></li>
+          </ul>
+      </div>
+      <div class="footer-column">
+          <h3>Contact</h3>
+          <ul>
+              <li>Email: info@example.com</li>
+              <li>Phone: +123-456-7890</li>
+              <li>Address: 123 Main St, City, Country</li>
+          </ul>
+          <div class="social-icons">
+              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="tel:+1234567890" title="Phone"><i class="fas fa-phone"></i></a>
+          </div>
+      </div>
   </footer>
+
+  <script src="js/jobs.js"></script>
+  <script src="js/dropdown_menu_profile.js"></script>
 </body>
 </html>
