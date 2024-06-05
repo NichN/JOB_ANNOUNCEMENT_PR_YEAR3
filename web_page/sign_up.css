@@ -1,0 +1,97 @@
+.backround{
+    background-image: url(/assets/images/background_image.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.container {
+    padding-left: 30%;
+    padding-top: 1%;
+    
+}
+form{
+    background-color: white; 
+    border-radius: 20px; 
+    align-items: center; 
+    width: 50%;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.form h4{
+    text-align: center;
+    padding-left: 10px;
+}
+.form p{
+    text-align: left;
+    padding-left: 20px;
+    color: #A7727D;
+}
+.form_wrap .input_grp{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.form_wrap .input_grp  input[type="text"]{
+    border-radius: 5px;
+    width: 230px;
+    height: 30px;
+    border-color: #A7727D;
+}
+.email input{
+    border-radius: 5px;
+    width: 510px;
+    height: 30px;
+    border-color: #A7727D;
+}
+.password input{
+    border-radius: 5px;
+    width: 510px;
+    height: 30px;
+    border-color: #A7727D;
+}
+.comfirm input{
+    border-radius: 5px;
+    width: 510px;
+    height: 30px;
+    border-color: #A7727D;
+}  
+.button{
+    text-align: center;
+}
+.button input{
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    background-color: #003370;
+    color: white;
+  }
+.form p{
+    text-align: center;
+}
+.form a{
+    text-align: center;
+    text-decoration: none;
+    color: #A7727D;
+}
+.Login{
+    text-align: center;
+}
+.Login input{
+    border-radius: 20px;
+    height: 30px;
+    width: 160px;
+    background-color: #003370;
+    color: white;
+  }
+  .header h1{
+     text-align: center;
+     color: #A7727D;
+     padding-top: 0;
+  }
