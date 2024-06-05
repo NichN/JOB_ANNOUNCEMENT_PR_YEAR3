@@ -1,1 +1,157 @@
-<h1>Job Annnouncement</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job announcement</title>
+    <link rel="stylesheet" type="text/css" href="styles/indext_style.css">
+    <link rel="icon" href="assets/logos/logo_2.png" width="70" height="70">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        function redirectToPage(pageURL) {
+            window.location.href = pageURL;
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="assets/logos/logo_2.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="web_page/employee/all_job.html">JOB</a>
+            <a href="web_page/employee/contact_us.html">CONTACT</a>
+            <a href="web_page/employee/about_us.html">ABOUT US</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button onclick="searchFunction()">Search</button>
+            <div class="login-logout">
+                <button style="border-radius: 0px;background-color: transparent;">Login</button>
+                <button style="border-radius: 0px;background-color: transparent;">Logout</button>
+                <div class="dropdown">
+                    <button class="profile-btn" style="background-color: transparent;">
+                        <img src="assets/images/profiles.png" alt="Profile Icon">
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">My Profile</a>
+                        <div class="sub-dropdown">
+                            <a href="#" class="sub-dropbtn">Post Job</a>
+                            <div class="sub-dropdown-content">
+                                <a href="#">Enterprise</a>
+                                <a href="#">Talent Pool</a>
+                            </div>
+                        </div>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="banner_img">
+            <img src="assets/images/banner.png" style="height: 400px;width: 100%;">
+        </div>
+        <div class="job-categories">
+            <div class=" custom-button" onclick="redirectToPage('page1.html')" style="    background-color: #A7727D;">
+                <img src="assets/Icons/it.png" alt="Technology Information">
+                Information Technology
+            </div>
+            <div class="custom-button" onclick="redirectToPage('page2.html')" style="    background-color: #A7727D;">
+                <img src="assets/Icons/administrator.png" alt="Technology Information">
+                Administrator
+            </div>
+            <div class="custom-button" onclick="redirectToPage('page3.html')" style="    background-color: #A7727D;">
+                <img src="assets/Icons/architectures.png">
+                Architecture/Engineering
+            </div>
+            <div class="custom-button" onclick="redirectToPage('page3.html')" style="    background-color: #A7727D;">
+                <img src="assets/Icons/accounting.png">
+                Accounting
+            </div>
+            <div class="custom-button" onclick="redirectToPage('page3.html')" style="    background-color: #A7727D;">
+                <img src="assets/Icons/cashiers.png">
+                Cashier
+            </div>
+            <div class="custom-button" onclick="redirectToPage('page3.html')" style="    background-color: #A7727D;">
+                <img src="assets/Icons/banking copy.png">
+                Banking
+            </div>
+            <div class="custom-button" onclick="redirectToPage('page3.html')" style="    background-color: #A7727D;">
+                <img src="assets/Icons/education_training.png">
+                Education
+            </div>
+            <div class="custom-button" onclick="redirectToPage('page3.html')" style="    background-color: #A7727D;">
+                <img src="assets/Icons/customer_service.png">
+                Customer Service
+            </div>
+            <div class="custom-button" onclick="redirectToPage('page3.html')" style="    background-color: #A7727D;">
+                <img src="assets/Icons/design.png">
+                Graphic Design
+            </div>
+            <div class="custom-button" onclick="redirectToPage('page3.html')" style="    background-color: #A7727D;">
+                <img src="assets/Icons/software_dev.png">
+                Software Engineering
+            </div>
+        </div>
+        <h5 class="latest">Latest</h5>
+        <div class="grid-container" id="latest-job-container"></div>
+        <button class="showmore-btn" id="show-more" onclick="redirectToPage()">Show More</button>
+        <h5 class="latest">Popular</h5>
+        <div class="grid-container" id="popular-job-container"></div>
+        <button class="showmore-btn" id="show-less" onclick="redirectToPage()">Show
+            More</button>
+    </div>
+    <script src="js/jobs.js"></script>
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>How to Apply</h3>
+            <ul>
+                <li><a href="#">Application Process</a></li>
+                <li><a href="#">Requirements</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Deadlines</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+                <li>Email: info@example.com</li>
+                <li>Phone: +123-456-7890</li>
+                <li>Address: 123 Main St, City, Country</li>
+            </ul>
+            <div class="social-icons">
+                <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="tel:+1234567890" title="Phone"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/dropdown_menu_profile.js"></script>
+</body>
+
+</html>
