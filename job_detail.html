@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Details</title>
     <link rel="stylesheet" type="text/css" href="styles/indext_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/job_details_style.css">
     <link rel="stylesheet" type="text/css" href="styles/header_style.css">
-
     <link rel="icon" href="assets/logos/logo_2.png" width="70" height="70">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
@@ -108,10 +108,10 @@
         </div>
     </div>
 </div>
-<div class="job-details-container">
+<div class="job-details-container" style="width : 100%; padding-left : 200px;padding-right:200px">
     <div class="job-card">
         <div style="display: flex;">
-            <img src="assets/images/company_logo.png" alt="Company Logo" class="company-logo">
+            <img src="assets/logos/logo_1.1.png" alt="Company Logo" class="company-logo">
             <div class="job-info">
                 <h2 id="job-title">Job Title</h2>
                 <p id="company-name">Company Name</p>
@@ -132,35 +132,37 @@
             <button class="apply">Apply</button>
             <button class="communicate">Communicate Us</button>
         </div>
-        <img src="assets/icons/save_icon.png" alt="Save Icon" class="save-icon">
+        <img src="assets/Icons/favorite.png" alt="Save Icon" class="save-icon" style="width : 50px; height : 50px">
     </div>
-
-    <div class="job-details">
+    <div class="job-details" >
         <h3>About the Job</h3>
-        <p id="about-job">Detailed information about the job...</p>
+        <p id="about-job">Detailed information about the job that goes beyond two lines to demonstrate the overflow handlingthat goes beyondthat goes beyothat goes beyond two lines to demonstrate the overflow handlingthat goes beyond two lines to demonstrate the overflow handlingnd two lines to demonstrate the overflow handling two lines to demonstrate the overflow handling...</p>
+        <span class="read-more" onclick="toggleReadMore('about-job', this)">Read more</span>
 
         <h3>Job Description</h3>
-        <p id="job-description">Job description details...</p>
+        <p id="job-description">Job description details that also extend beyond the two lines limit to show how text is managed with the overflow and read more functionality...</p>
+        <span class="read-more" onclick="toggleReadMore('job-description', this)">Read more</span>
 
         <h3>Job Responsibilities</h3>
-        <p id="job-responsibilities">Responsibilities of the job...</p>
+        <p id="job-responsibilities">Responsibilities of the job that are listed and continue past the two-line restriction to show the usage of the overflow handling mechanism...</p>
+        <span class="read-more" onclick="toggleReadMore('job-responsibilities', this)">Read more</span>
 
         <h3>Job Requirements</h3>
-        <p id="job-requirements">Requirements for the job...</p>
+        <p id="job-requirements">Requirements for the job including various points and descriptions that extend beyond the two lines to illustrate the overflow handling...</p>
+        <span class="read-more" onclick="toggleReadMore('job-requirements', this)">Read more</span>
 
         <h3>Benefits</h3>
-        <p id="job-benefits">Benefits of the job...</p>
+        <p id="job-benefits">Benefits of the job including comprehensive details that go beyond the two lines to show how text overflow is managed...</p>
+        <span class="read-more" onclick="toggleReadMore('job-benefits', this)">Read more</span>
     </div>
+    <script src="js/toggle_readmore.js"></script>
 </div>
-
-
 <!--<div id="job-details" class="job-details">-->
 <!--    <h2 id="job-title"></h2>-->
 <!--    <p id="job-description"></p>-->
 <!--</div>-->
 <button onclick="window.history.back()">Back</button>
-
-<footer class="footer">
+<footer class="footer" style="width : 100%">
     <div class="footer-column">
         <h3>How to Apply</h3>
         <ul>
@@ -204,5 +206,6 @@
         </div>
     </div>
 </footer>
+
 </body>
 </html>
