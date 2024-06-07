@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details</title>
+    <link rel="stylesheet" type="text/css" href="styles/indext_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/job_details_style.css">
+    <link rel="stylesheet" type="text/css" href="styles/header_style.css">
+    <link rel="icon" href="assets/logos/logo_2.png" width="70" height="70">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        const jobData = {
+            it: {
+                title: 'Information Technology',
+                description: 'Details about IT job responsibilities, requirements, and more.'
+            },
+            administrator: {
+                title: 'Administrator',
+                description: 'Details about Administrator job responsibilities, requirements, and more.'
+            },
+            architecture: {
+                title: 'Architecture/Engineering',
+                description: 'Details about Architecture/Engineering job responsibilities, requirements, and more.'
+            },
+            accounting: {
+                title: 'Accounting',
+                description: 'Details about Accounting job responsibilities, requirements, and more.'
+            },
+            cashier: {
+                title: 'Cashier',
+                description: 'Details about Cashier job responsibilities, requirements, and more.'
+            },
+            banking: {
+                title: 'Banking',
+                description: 'Details about Banking job responsibilities, requirements, and more.'
+            },
+            education: {
+                title: 'Education',
+                description: 'Details about Education job responsibilities, requirements, and more.'
+            },
+            customer_service: {
+                title: 'Customer Service',
+                description: 'Details about Customer Service job responsibilities, requirements, and more.'
+            },
+            graphic_design: {
+                title: 'Graphic Design',
+                description: 'Details about Graphic Design job responsibilities, requirements, and more.'
+            },
+            software_engineering: {
+                title: 'Software Engineering',
+                description: 'Details about Software Engineering job responsibilities, requirements, and more.'
+            }
+        };
+
+        function getJobFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('job');
+        }
+
+        function displayJobDetails() {
+            const job = getJobFromURL();
+            if (job && jobData[job]) {
+                document.getElementById('job-title').textContent = jobData[job].title;
+                document.getElementById('job-description').textContent = jobData[job].description;
+            } else {
+                document.getElementById('job-details').innerHTML = '<p>Job not found</p>';
+            }
+        }
+
+        window.onload = displayJobDetails;
+    </script>
+</head>
+<body>
+<div class="navbar">
+    <div class="logo">
+        <img src="assets/logos/tranparent_logo_2.png" alt="Logo">
+    </div>
+    <div class="nav-menu">
+        <a href="#">Home</a>
+        <a href="#">Job</a>
+        <a href="#">Save</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <form id="form" role="search" class="search-form">
+        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+        <button type="submit">Search</button>
+    </form>
+    <div class="user-section">
+        <button class="login-btn">Login</button>
+        <button class="logout-btn">Logout</button>
+        <div class="profile-icon">
+            <button class="profile-btn">
+                <img src="assets/images/profiles.png" alt="Profile Icon">
+            </button>
+            <div class="dropdown-content">
+                <a href="#">My Profile</a>
+                <div class="sub-dropdown">
+                    <a href="#" class="sub-dropbtn">Post Job</a>
+                    <div class="sub-dropdown-content">
+                        <a href="#">Enterprise</a>
+                        <a href="#">Talent Pool</a>
+                    </div>
+                </div>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="job-details-container" style="width : 100%; padding-left : 200px;padding-right:200px">
+    <div class="job-card">
+        <div style="display: flex;">
+            <img src="assets/logos/logo_1.1.png" alt="Company Logo" class="company-logo">
+            <div class="job-info">
+                <h2 id="job-title">Job Title</h2>
+                <p id="company-name">Company Name</p>
+                <div class="job-meta">
+                    <div>
+                        <p id="job-term">Term: Full-time</p>
+                        <p id="job-position">Position: Senior Developer</p>
+                        <p id="date-posted">Date Posted: June 1, 2024</p>
+                    </div>
+                    <div>
+                        <p id="job-experience">Experience: 3+ years</p>
+                        <p id="job-location">Location: New York, NY</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="apply">Apply</button>
+            <button class="communicate">Communicate Us</button>
+        </div>
+        <img src="assets/Icons/favorite.png" alt="Save Icon" class="save-icon" style="width : 50px; height : 50px">
+    </div>
+    <div class="job-details" >
+        <h3>About the Job</h3>
+        <p id="about-job">Detailed information about the job that goes beyond two lines to demonstrate the overflow handlingthat goes beyondthat goes beyothat goes beyond two lines to demonstrate the overflow handlingthat goes beyond two lines to demonstrate the overflow handlingnd two lines to demonstrate the overflow handling two lines to demonstrate the overflow handling...</p>
+        <span class="read-more" onclick="toggleReadMore('about-job', this)">Read more</span>
+
+        <h3>Job Description</h3>
+        <p id="job-description">Job description details that also extend beyond the two lines limit to show how text is managed with the overflow and read more functionality...</p>
+        <span class="read-more" onclick="toggleReadMore('job-description', this)">Read more</span>
+
+        <h3>Job Responsibilities</h3>
+        <p id="job-responsibilities">Responsibilities of the job that are listed and continue past the two-line restriction to show the usage of the overflow handling mechanism...</p>
+        <span class="read-more" onclick="toggleReadMore('job-responsibilities', this)">Read more</span>
+
+        <h3>Job Requirements</h3>
+        <p id="job-requirements">Requirements for the job including various points and descriptions that extend beyond the two lines to illustrate the overflow handling...</p>
+        <span class="read-more" onclick="toggleReadMore('job-requirements', this)">Read more</span>
+
+        <h3>Benefits</h3>
+        <p id="job-benefits">Benefits of the job including comprehensive details that go beyond the two lines to show how text overflow is managed...</p>
+        <span class="read-more" onclick="toggleReadMore('job-benefits', this)">Read more</span>
+    </div>
+    <script src="js/toggle_readmore.js"></script>
+</div>
+<!--<div id="job-details" class="job-details">-->
+<!--    <h2 id="job-title"></h2>-->
+<!--    <p id="job-description"></p>-->
+<!--</div>-->
+<button onclick="window.history.back()">Back</button>
+<footer class="footer" style="width : 100%">
+    <div class="footer-column">
+        <h3>How to Apply</h3>
+        <ul>
+            <li><a href="#">Application Process</a></li>
+            <li><a href="#">Requirements</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Deadlines</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+            <li>Email: info@example.com</li>
+            <li>Phone: +123-456-7890</li>
+            <li>Address: 123 Main St, City, Country</li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="tel:+1234567890" title="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

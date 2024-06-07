@@ -1,0 +1,111 @@
+.job-details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.job-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+
+    margin-bottom: 20px;
+    position: relative;
+}
+.job-card img.company-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.job-card .job-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.job-card .job-info h2 {
+    margin: 0;
+}
+.job-card .job-info .job-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.job-card .job-info .job-meta div {
+    display: flex;
+    align-items: center;
+}
+.job-card .job-info .job-meta div p {
+    margin: 0 10px;
+}
+.job-card .job-info .job-meta div p:not(:last-child)::after {
+    content: "|";
+    margin-left: 10px;
+}
+.job-card .buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+
+}
+.job-card .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.job-card .buttons button.apply {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 10px;
+}
+.job-card .buttons button.communicate {
+    background-color: #008CBA;
+    color: white;
+}
+.job-card .save-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+
+.job-details {
+    width : 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.job-details h3 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+.job-details p {
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+    max-height: 3.2em; /* Approx. 2 lines */
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.3s ease;
+}
+.job-details p.expanded {
+    max-height: none;
+}
+.read-more {
+    color: #007BFF;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: underline;
+    padding-bottom : 30px;
+}
