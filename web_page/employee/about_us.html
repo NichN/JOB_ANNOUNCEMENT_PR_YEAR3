@@ -4,13 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
+  <link rel="stylesheet" type="text/css" href="../../styles/header_style.css">
   <link rel="stylesheet" type="text/css" href="../../styles/indext_style.css">
   <link rel="icon" href="../../assets/logos/logo_2.png" width="70" height="70">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script>
-    function redirectToPage(pageURL) {
-        window.location.href = pageURL;
-    }
+      function redirectToPage(job) {
+          window.location.href = `job_detail.html?job=${job}`;
+      }
   </script>
   <style>
     body {
@@ -19,7 +20,7 @@
       margin: 0;
       padding: 0;
       background-color: #f9f9f9;
-      overflow-x: hidden; 
+      /* overflow-x: hidden;  */
     }
 
     .about-us {
@@ -78,44 +79,50 @@
       font-size: 14px;
       color: #000000;
     }
+    .core-values p::before {
+      content: '•';
+      margin-right: 10px;
+      color: #A7727D; 
+    }
   </style>
 </head>
 <body>
   <div class="navbar">
     <div class="logo">
-        <img src="../../assets/logos/logo_2.png" alt="Logo">
+        <img onclick="window.history.back()" src="../../assets/logos/tranparent_logo_2.png" alt="Logo">
     </div>
-    <div class="menu">
-        <a href="../../index.html">HOME</a>
-        <a href="all_job.html">JOB</a>
-        <a href="contact_us.html">CONTACT</a>
-        <a href="about_us.html">ABOUT US</a>
+    <div class="nav-menu">
+        <a href="../../index.html">Home</a>
+        <a href="#">Job</a>
+        <a href="#">Save</a>
+        <a href="../employee/about_us.html">About</a>
+        <a href="../employee/contact_us.html">Contact Us</a>
     </div>
-    <div class="search-bar">
-        <input type="text" placeholder="Search...">
-        <button onclick="searchFunction()">Search</button>
-        <div class="login-logout">
-            <button style="border-radius: 0px;background-color: transparent;">Login</button>
-            <button style="border-radius: 0px;background-color: transparent;">Logout</button>
-            <div class="dropdown">
-                <button class="profile-btn" style="background-color: transparent;">
-                    <img src="../../assets/images/profiles.png" alt="Profile Icon">
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">My Profile</a>
-                    <div class="sub-dropdown">
-                        <a href="#" class="sub-dropbtn">Post Job</a>
-                        <div class="sub-dropdown-content">
-                            <a href="#">Enterprise</a>
-                            <a href="#">Talent Pool</a>
-                        </div>
+    <form id="form" role="search" class="search-form">
+        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+        <button type="submit">Search</button>
+    </form>
+    <div class="user-section">
+        <button class="login-btn">Login</button>
+        <button class="logout-btn">Logout</button>
+        <div class="profile-icon">
+            <button class="profile-btn">
+                <img src="../../assets/images/profiles.png" alt="Profile Icon">
+            </button>
+            <div class="dropdown-content">
+                <a href="#">My Profile</a>
+                <div class="sub-dropdown">
+                    <a href="#" class="sub-dropbtn">Post Job</a>
+                    <div class="sub-dropdown-content">
+                        <a href="#">Enterprise</a>
+                        <a href="../job_poster/talent_pool.html">Talent Pool</a>
                     </div>
-                    <a href="#">Logout</a>
                 </div>
+                <a href="#">Logout</a>
             </div>
         </div>
     </div>
-  </div>
+</div>
 
   <section class="about-us">
     <img src="../../assets/images/about_us.jpg" alt="About Us">
