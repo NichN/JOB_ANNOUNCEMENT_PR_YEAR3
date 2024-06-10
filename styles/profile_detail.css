@@ -1,0 +1,15 @@
+.btnlogin-logout button {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+}
+.btnlogin-logout {
+    padding-right: 150px;
+}
+.btn-contact button{
+   height: 40px;
+   width: 120px;
+   border-radius:10px ;
+   color: white;
+}
+

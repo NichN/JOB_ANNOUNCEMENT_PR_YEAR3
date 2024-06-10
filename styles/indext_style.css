@@ -7,8 +7,6 @@ body {
     flex-direction: column;
 }
 
-
-
 .logo img {
     width: 70px;
     height: 70px;
@@ -16,7 +14,7 @@ body {
 
 .menu {
     flex-grow: 1;
-    text-align: center;
+    text-align: left;
 }
 
 .menu a {
@@ -648,15 +646,4 @@ li img{
 }
 .review a{
     text-decoration: none;
-}
-.btn-postjob{
-    padding-left: 55%;
-    justify-content: space-between;
-    display: flex;
-}
-.btn-postjob button{
-   background-color: red;
-   height: 40px;
-   width: 120px;
-   border-radius: 50px;
 }
