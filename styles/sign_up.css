@@ -80,18 +80,28 @@ form{
     text-decoration: none;
     color: #A7727D;
 }
-.Login{
-    text-align: center;
-}
-.Login input{
-    border-radius: 20px;
-    height: 30px;
-    width: 160px;
-    background-color: #003370;
-    color: white;
-  }
   .header h1{
      text-align: center;
      color: #A7727D;
      padding-top: 0;
   }
+  .btn-signup button{
+    border-radius: 5px;
+    height: 30px;
+    width: 70px; 
+  
+  }
+  .btn-signup button a{
+    text-decoration: none;
+    color:#fff;
+   }
+   .btn-submit button{
+    border-radius: 5px;
+    height: 30px;
+    width: 70px; 
+  
+  }
+  .btn-submit button a{
+    text-decoration: none;
+    color:#fff;
+   }

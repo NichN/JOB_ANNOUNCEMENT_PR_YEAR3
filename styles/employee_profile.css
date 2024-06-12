@@ -69,4 +69,17 @@
     height: 150px;
 
 }
-
+.continue-btn{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.continue-btn button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color:#003370;
+}
+.continue-btn button a{
+    color: #ffff;
+    text-decoration: none;
+}
