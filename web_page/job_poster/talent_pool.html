@@ -13,16 +13,16 @@
             window.location.href = `job_detail.html?job=${job}`;
         }
     </script><style>
-.body {
+/* .body {
     font-family: 'Outfit', sans-serif;
     color: #CFC6C6;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
-}
+} */
 
 .dropdown-categories {
     justify-content: center;
@@ -53,11 +53,11 @@
 .job-detail {
     color: #A7727D;
     font-size: 20px;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     margin-top: 20px;
     margin-left: 150px;
-    padding: 10px;
+    padding-left: 60px;
 }
 
 .job-detail button {
@@ -79,6 +79,8 @@
 .button-container {
     display: flex;
     align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .All {
@@ -91,7 +93,7 @@
     font-size: 16px;
     margin-right: 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 .resume-were-found-btn {
     background-color: #003370;
@@ -102,15 +104,17 @@
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-left: auto; 
 }
 .flex-container {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     gap: 20px;
     width: 100%;
     margin: 20px 0;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .employee-card {
@@ -120,9 +124,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 75%;
-    margin-left: 200px;
-    margin-right: 150px;
+    width: 100%;
     position: relative;
 }
 
@@ -176,6 +178,7 @@
 }
 
 .button-icon-container {
+    margin: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -201,10 +204,10 @@
             <a href="../employee/about_us.html">About</a>
             <a href="../employee/contact_us.html">Contact Us</a>
         </div>
-        <form id="form" role="search" class="search-form">
+        <!-- <form id="form" role="search" class="search-form">
             <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
             <button type="submit">Search</button>
-        </form>
+        </form> -->
         <div class="user-section">
             <button class="login-btn">Login</button>
             <button class="logout-btn">Logout</button>
@@ -226,10 +229,12 @@
             </div>
         </div>
     </div>
+
+    <div class="banner_img">
+        <img src="../../assets/images/banner.png" style="height: 400px;width: 100%">
+    </div>
+
     <div class="body-container">
-        <div class="banner_img">
-            <img src="../../assets/images/banner.png" style="height: 400px; width: 100%;">
-        </div>
         <div class="dropdown-categories">
             <div class="custom-button" onclick="redirectToPage('page1.html')" style="background-color: #A7727D;">
                 Area <i class="fas fa-chevron-down"></i>
@@ -245,8 +250,7 @@
             </div>
             <div class="custom-button" onclick="redirectToPage('page3.html')" style="background-color: #A7727D;">
                 Resume <i class="fas fa-chevron-down"></i>
-            </div> 
-             
+            </div>    
         </div>
     </div>
     <div class="job-detail">
@@ -275,7 +279,7 @@
     </div>
     <div class="flex-container" id="latest-employee-container">
         <div class="employee-card">
-            <img src="../../assets/logos/logo_1.1.png" alt="ABC Tech">
+            <img src="../../assets/logos/logo_1.1.png">
             <div class="card-content">
                 <h3>Senior Software Developer</h3>
                 <p>Chhan Sokhan</p>
@@ -288,12 +292,12 @@
             <div class="button-icon-container">
                 <button class="card-button" onclick="redirectToPage()">Resume</button>
                 <div class="paper-icon">
-                    <img src="../../assets/Icons/paper.png" alt="Paper Icon" class="paper-icon">
+                    <img src="../../assets/Icons/paper.png" style="height: 25px; width: 25px; margin-top: 10px;" alt="Paper Icon" class="paper-icon">
                 </div>
             </div>
         </div>
         <div class="employee-card">
-            <img src="../../assets/logos/logo_1.1.png" alt="ABC Tech">
+            <img src="../../assets/logos/logo_1.1.png">
             <div class="card-content">
                 <h3>Senior Software Developer</h3>
                 <p>Chhan Sokhan</p>
@@ -306,12 +310,12 @@
             <div class="button-icon-container">
                 <button class="card-button" onclick="redirectToPage()">Resume</button>
                 <div class="paper-icon">
-                    <img src="../../assets/Icons/paper.png" alt="Paper Icon" class="paper-icon">
+                    <img src="../../assets/Icons/paper.png" style="height: 25px; width: 25px; margin-top: 10px;" alt="Paper Icon" class="paper-icon">
                 </div>
             </div>
         </div>   
         <div class="employee-card">
-            <img src="../../assets/logos/logo_1.1.png" alt="ABC Tech">
+            <img src="../../assets/logos/logo_1.1.png">
             <div class="card-content">
                 <h3>Senior Software Developer</h3>
                 <p>Chhan Sokhan</p>
@@ -324,12 +328,12 @@
             <div class="button-icon-container">
                 <button class="card-button" onclick="redirectToPage()">Resume</button>
                 <div class="paper-icon">
-                    <img src="../../assets/Icons/paper.png" alt="Paper Icon" class="paper-icon">
+                    <img src="../../assets/Icons/paper.png" style="height: 25px; width: 25px; margin-top: 10px;" alt="Paper Icon" class="paper-icon">
                 </div>
             </div>
         </div>   
         <div class="employee-card">
-            <img src="../../assets/logos/logo_1.1.png" alt="ABC Tech">
+            <img src="../../assets/logos/logo_1.1.png">
             <div class="card-content">
                 <h3>Senior Software Developer</h3>
                 <p>Chhan Sokhan</p>
@@ -342,12 +346,12 @@
             <div class="button-icon-container">
                 <button class="card-button" onclick="redirectToPage()">Resume</button>
                 <div class="paper-icon">
-                    <img src="../../assets/Icons/paper.png" alt="Paper Icon" class="paper-icon">
+                    <img src="../../assets/Icons/paper.png" style="height: 25px; width: 25px; margin-top: 10px;" alt="Paper Icon" class="paper-icon">
                 </div>
             </div>
         </div>   
         <div class="employee-card">
-            <img src="../../assets/logos/logo_1.1.png" alt="ABC Tech">
+            <img src="../../assets/logos/logo_1.1.png">
             <div class="card-content">
                 <h3>Senior Software Developer</h3>
                 <p>Chhan Sokhan</p>
@@ -360,12 +364,12 @@
             <div class="button-icon-container">
                 <button class="card-button" onclick="redirectToPage()">Resume</button>
                 <div class="paper-icon">
-                    <img src="../../assets/Icons/paper.png" alt="Paper Icon" class="paper-icon">
+                    <img src="../../assets/Icons/paper.png" style="height: 25px; width: 25px; margin-top: 10px;" alt="Paper Icon" class="paper-icon">
                 </div>
             </div>
         </div>   
         <div class="employee-card">
-            <img src="../../assets/logos/logo_1.1.png" alt="ABC Tech">
+            <img src="../../assets/logos/logo_1.1.png">
             <div class="card-content">
                 <h3>Senior Software Developer</h3>
                 <p>Chhan Sokhan</p>
@@ -378,7 +382,7 @@
             <div class="button-icon-container">
                 <button class="card-button" onclick="redirectToPage()">Resume</button>
                 <div class="paper-icon">
-                    <img src="../../assets/Icons/paper.png" alt="Paper Icon" class="paper-icon">
+                    <img src="../../assets/Icons/paper.png" style="height: 25px; width: 25px; margin-top: 10px;" alt="Paper Icon" class="paper-icon">
                 </div>
             </div>
         </div>        

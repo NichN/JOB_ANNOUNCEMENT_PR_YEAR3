@@ -335,7 +335,6 @@ body {
 }
 
 .job-categories {
-
     justify-content: center;
     gap: 10px;
     width: 100%;
@@ -348,9 +347,7 @@ body {
 
 .grid-container {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     grid-gap: 20px;
 
 }
@@ -461,6 +458,7 @@ body {
     border-radius: 5px;
     align-content: start;
     align-items: start;
+    padding:20px;
 
 }
 
@@ -489,14 +487,12 @@ body {
     padding-right: 200px;
 }
 
-/* Dropdown container */
 .dropdown {
     position: relative;
     display: inline-block;
 
 }
 
-/* Dropdown content */
 .dropdown-content {
 
     display: none;
@@ -532,13 +528,11 @@ body {
     top: 0;
 }
 
-/* Show the sub-dropdown menu on hover */
 .sub-dropdown:hover .sub-dropdown-content {
     display: block;
 
 }
 
-/* Style the Post Job button */
 .sub-dropbtn {
     background-color: transparent;
     border: none;
@@ -618,8 +612,8 @@ li img{
     justify-content: space-around;
 }
 .circle-img {
-    height: 150px; /* Adjust the size as needed */
-    width: 150px; /* Adjust the size as needed */
+    height: 150px;
+    width: 150px;
     border-radius: 100%;
     object-fit: cover;
 }
@@ -647,3 +641,66 @@ li img{
 .review a{
     text-decoration: none;
 }
+
+.job-buttons {
+    margin-top: 50px;
+}
+
+.job-button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.job-button:hover {
+    background-color: #45a049;
+}
+
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.job-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    transition: box-shadow 0.3s ease;
+}
+
+.job-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.job-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.job-item h2 {
+    font-size: 1.5em;
+}
+
+.job-item p {
+    margin: 10px 0;
+}
+
+.row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left : 200px;
+            padding-right : 200px;
+
+        }
