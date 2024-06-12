@@ -9,7 +9,7 @@ const latest_jobs = [
         image: "../../assets/logos/logo_1.1.png",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
         companyDescription: "ABC Tech is a leading tech company specializing in software development and IT consulting. We offer a dynamic and inclusive work environment.",
-        link: "../../job_detail.html",
+        link: "job_detail.html",
         icon: "fas fa-laptop-code"
     },
         {
@@ -22,7 +22,7 @@ const latest_jobs = [
             image: "../../assets/logos/logo_1.1.png",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
             companyDescription: "ABC Tech is a leading tech company specializing in software development and IT consulting. We offer a dynamic and inclusive work environment.",
-            link: "../../job_detail.html",
+            link: "job_detail.html",
             icon: "fas fa-laptop-code"
         },
             {
@@ -35,7 +35,7 @@ const latest_jobs = [
                 image: "../../assets/logos/logo_1.1.png",
                 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
                 companyDescription: "ABC Tech is a leading tech company specializing in software development and IT consulting. We offer a dynamic and inclusive work environment.",
-                link: "../../job_detail.html",
+                link: "job_detail.html",
                 icon: "fas fa-laptop-code"
             },
                 {
@@ -48,7 +48,7 @@ const latest_jobs = [
                     image: "../../assets/logos/logo_1.1.png",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
                     companyDescription: "ABC Tech is a leading tech company specializing in software development and IT consulting. We offer a dynamic and inclusive work environment.",
-                    link: "../../job_detail.html",
+                    link: "job_detail.html",
                     icon: "fas fa-laptop-code"
                 },
                     {
@@ -61,7 +61,7 @@ const latest_jobs = [
                         image: "../../assets/logos/logo_1.1.png",
                         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.",
                         companyDescription: "ABC Tech is a leading tech company specializing in software development and IT consulting. We offer a dynamic and inclusive work environment.",
-                        link: "../../job_detail.html",
+                        link: ".job_detail.html",
                         icon: "fas fa-laptop-code"
                     },
     {

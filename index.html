@@ -13,8 +13,10 @@
     <script>
         function redirectToPage(job) {
             window.location.href = `web_page/employee/job_category.html?job=${job}`;
-        }
+        };
     </script>
+
+
 </head>
 
 <body>
@@ -34,22 +36,22 @@
             <button type="submit">Search</button>
         </form>
         <div class="user-section">
-            <button class="login-btn">Login</button>
-            <button class="logout-btn">Logout</button>
+            <button id="loginBtn" class="login-btn" >Login</button>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
             <div class="profile-icon">
                 <button class="profile-btn">
                     <img src="assets/images/profiles.png" alt="Profile Icon">
                 </button>
                 <div class="dropdown-content">
-                    <a href="#">My Profile</a>
+                    <a href="web_page/job_poster/employee_profile.html">My Profile</a>
                     <div class="sub-dropdown">
                         <a href="#" class="sub-dropbtn">Post Job</a>
                         <div class="sub-dropdown-content">
-                            <a href="#">Enterprise</a>
+                            <a href="web_page/job_poster/post_job.html">Enterprise</a>
                             <a href="web_page/job_poster/talent_pool.html">Talent Pool</a>
                         </div>
                     </div>
-                    <a href="#">Logout</a>
+                    <a href="web_page/sign_up.html">Logout</a>
                 </div>
             </div>
         </div>
@@ -75,10 +77,10 @@
         <h5 class="latest" style="padding : 10px">Latest</h5>
         <div class="grid-container" id="latest-job-container"></div>
         <script src="js/late_job.js"></script>
-        <button class="showmore-btn" id="show-more" onclick="redirectToPage('latest_jobs.html')">Show More</button>
+        <button class="showmore-btn" id="show-more" onclick="redirectToPage('web_page/employee/popular_job.html')">Show More</button>
         <h5 class="popular" style="padding : 10px">Popular</h5>
         <div class="grid-container" id="popular-job-container"></div>
-        <button class="showmore-btn" id="show-less" onclick="redirectToPage('popular_jobs.html')">Show More</button>
+        <button class="showmore-btn" id="show-less" onclick="window.location.href='web_page/employee/popular_job.html'">Show More</button>
     </div>
 
     <footer class="footer">
@@ -128,11 +130,20 @@
 
     <script src="js/dropdown_menu_profile.js"></script>
     <script src="js/jobs.js"></script>
-    <script src="js/popular_job.js"></script>
+     <script src="js/popular_job.js"></script>
     <script>
         function goToJobList(category) {
             window.location.href = `joblist.html?category=${category}`;
         }
+    </script>
+    <script>
+        document.getElementById('loginBtn').onclick = function() {
+            window.location.href = 'web_page/login.html';
+        };
+
+        document.getElementById('logoutBtn').onclick = function() {
+            window.location.href = 'web_page/sign_up.html';
+        };
     </script>
 
 </body>

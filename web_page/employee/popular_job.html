@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alljob</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/header_style.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/indext_style.css">
+    <link rel="icon" href="../../assets/logos/logo_2.png">
+
+</head>
+
+<body>
+<div class="navbar">
+    <div class="logo">
+        <img onclick="window.history.back()" src="../../assets/logos/tranparent_logo_2.png" alt="Logo">
+    </div>
+    <div class="nav-menu">
+        <a href="#">Home</a>
+        <a href="../../web_page/employee/all_job.html">Job</a>
+        <a href="../../web_page/employee/save_job.html">Save</a>
+        <a href="../../web_page/employee/about_us.html">About</a>
+        <a href="../../web_page/employee/contact_us.html">Contact Us</a>
+    </div>
+    <form id="form" role="search" class="search-form">
+        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+        <button type="submit">Search</button>
+    </form>
+    <div class="user-section">
+        <button class="login-btn">Login</button>
+        <button class="logout-btn">Logout</button>
+        <div class="profile-icon">
+            <button class="profile-btn">
+                <img src="../../assets/images/profiles.png" alt="Profile Icon">
+            </button>
+            <div class="dropdown-content">
+                <a href="#">My Profile</a>
+                <div class="sub-dropdown">
+                    <a href="#" class="sub-dropbtn">Post Job</a>
+                    <div class="sub-dropdown-content">
+                        <a href="#">Enterprise</a>
+                        <a href="../../web_page/job_poster/talent_pool.html">Talent Pool</a>
+                    </div>
+                </div>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="banner_img">
+    <img src="../../assets/images/banner.png" style="height: 400px;">
+</div>
+<div class="row">
+    <h5 class="latest">Popular</h5>
+
+</div>
+<div class="grid-container" id="all-job-container" style="padding-left : 200px;padding-right:150px;"></div>
+<script src="../../js/all_job.js"></script>
+<script src="../../js/jobs.js"></script>
+</body>
+
+</html>

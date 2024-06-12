@@ -14,8 +14,6 @@ const jobs = [
         experience: "4 - 6 year",
         category: "Information Technology",
     },
-
-
 ];
 
 
