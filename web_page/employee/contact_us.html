@@ -13,16 +13,7 @@
             window.location.href = `job_detail.html?job=${job}`;
         }
     </script>
-      <style>
-body {
-        font-family: 'Outfit', sans-serif;
-        color: #CFC6C6;
-        margin: 0;
-        padding: 0;
-        background-color: #f9f9f9;
-        /* overflow-x: hidden; */
-      }
-
+<style>
 .contact-us {
   padding: 20px;
   background-color: #f9f9f9;
@@ -51,7 +42,6 @@ body {
   display: block;
   width: 50px; 
   height: 3px; 
-  /* background-color: #003370;  */
   margin: 10px auto 0; 
 }
 
@@ -153,7 +143,9 @@ body {
 .col-12 {width: 100%;
 text-align: center;}
   </style>
+  
 </head>
+
 <body>
   <div class="navbar">
     <div class="logo">
@@ -166,10 +158,10 @@ text-align: center;}
         <a href="../employee/about_us.html">About</a>
         <a href="../employee/contact_us.html">Contact Us</a>
     </div>
-    <form id="form" role="search" class="search-form">
+    <!-- <form id="form" role="search" class="search-form">
         <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
         <button type="submit">Search</button>
-    </form>
+    </form> -->
     <div class="user-section">
         <button class="login-btn">Login</button>
         <button class="logout-btn">Logout</button>
@@ -193,7 +185,7 @@ text-align: center;}
 </div>
 <section class="contact-us">
   <div class="image-container">
-      <img src="../../assets/images/contact_us.jpg" alt="Contact Us">
+      <img src="../../assets/images/contact_us.jpg" alt="Contact Us" style="height: 400px;width: 100%">
       <h2>Contact Us</h2>
   </div>
   <div class="row">
