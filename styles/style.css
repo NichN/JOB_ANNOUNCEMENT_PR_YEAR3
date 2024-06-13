@@ -1,0 +1,662 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+.menu {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #003370;
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+    background-color: #003370;
+
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #003370;
+    border-radius: 5px;
+}
+
+
+.search-bar button {
+    background-color: transparent;
+    color: #003370;
+    border: 1px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-logout {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    background-color: transparent;
+    border: white;
+
+}
+
+.login-logout button {
+    background-color: transparent;
+    color: transparent;
+    border: 1px solid #007bff;
+    padding: 10px 20px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.login-logout button:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    right: 0;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.profile-btn {
+    background-color: #003370;
+
+    border: none;
+    cursor: pointer;
+}
+
+.profile-btn img {
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50px;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    right: auto;
+    left: 0;
+    top: 10px;
+    z-index: 2;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+.sub-dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    color: #333;
+}
+
+.sub-dropbtn:hover {
+    background-color: #ddd;
+}
+.footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+}
+
+.overlay {
+
+    height: 100%;
+    width: 0;
+    position: fixed;
+
+    z-index: 1;
+
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    background-color: #003370;
+    color: white;
+    padding: 40px 0;
+    margin-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+.footer-column {
+    width: 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.custom-button img {
+    height: 50px;
+    width: 50px;
+    color: #ffffff;
+}
+
+.custom-button:hover {
+    background-color: #0056b3;
+}
+
+.banner_img {
+    width: 100%;
+    padding: 10px;
+    height: 20%;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+
+.body-container {
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.job-categories {
+
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+
+}
+
+.grid-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-gap: 20px;
+
+}
+
+.job-card {
+    background: white;
+
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-10px);
+}
+
+.job-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.job-card .card-content {
+    padding: 20px;
+}
+
+.job-card h3 {
+    margin: 0 0 10px;
+}
+
+.job-card p {
+    margin: 0px 0;
+    color: #555;
+}
+
+.job-card .icon-text {
+    display: flex;
+    align-items: initial;
+    margin-bottom: 10px;
+}
+
+.job-card .icon-text i {
+    margin-right: 10px;
+
+
+}
+
+.job-card .salary {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.job-card .company-description {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.job-categories button {
+    background-color: #A7727D;
+}
+
+.content {
+    max-height: 100px;
+    /* Initially show only 100px of content */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.show-more-btn,
+.show-less-btn {
+    cursor: pointer;
+    color: blue;
+}
+
+.showmore-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 0%;
+
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.latest {
+    background-color: #003370;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 93%;
+    cursor: pointer;
+    border-radius: 5px;
+    align-content: start;
+    align-items: start;
+
+}
+
+.popular {
+    background-color: #003370;
+    border: none;
+    color: white;
+
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 93%;
+    cursor: pointer;
+    border-radius: 5px;
+    align-content: start;
+    align-items: start;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    padding-right: 200px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Dropdown content */
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+
+    border-radius: 5px;
+    z-index: 1;
+    text-align: left;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); */
+    left: 100%;
+    top: 0;
+}
+
+/* Show the sub-dropdown menu on hover */
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+
+}
+
+/* Style the Post Job button */
+.sub-dropbtn {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+
+.sub-dropbtn:hover {
+    background-color: #003370;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding-right: 30%;
+
+
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 500px;
+}
+
+.search-bar button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+.backround{
+    background-image: url(/assets/images/background_image.jpg);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.list{
+    list-style-type: none;
+    padding: 0px;
+    overflow: hidden;
+    background-color:#003370;
+    display: flex;
+    height: 50px;
+}
+.list li a{
+    text-decoration: none;
+    padding: 15px 10px;
+    color: white;
+    padding-left: 30px;
+
+}
+li img{
+    width: 40px;
+    padding-left: 10px;
+}
+
+.container {
+    padding-top: 2%;
+    justify-content: center;
+    display: flex;
+}
+.foorter{
+    justify-content: space-around;
+}
+.circle-img {
+    height: 150px; /* Adjust the size as needed */
+    width: 150px; /* Adjust the size as needed */
+    border-radius: 100%;
+    object-fit: cover;
+}
+.card-list{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+}
+.button button{
+    border-radius: 10px;
+    height: 40px;
+    color: #ffffff;
+    border-color: #A7727D;
+    width: 100px;
+}
+.button{
+    padding-left: 10%;
+    justify-content: space-between;
+    display: flex;
+}
+.review{
+    display: flex;
+    justify-content: space-between;
+}
+.review a{
+    text-decoration: none;
+}
+.btn-postjob{
+    padding-left: 55%;
+    justify-content: space-between;
+    display: flex;
+}
+.btn-postjob button{
+   background-color: red;
+   height: 40px;
+   width: 120px;
+   border-radius: 50px;
+}
