@@ -1,0 +1,186 @@
+/* Default styles */
+.btnlogin-logout button {
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+}
+.btnlogin-logout {
+  padding-right: 150px;
+}
+
+.upload-container {
+  position: relative;
+  width: 150px;
+  height: 120px;
+  padding-left: 2%;
+}
+.upload-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 80%;
+  border: 2px solid #A39A9A;
+  border-radius: 50%;
+}
+
+.upload-label:hover {
+  border-color: #A39A9A;
+}
+
+.upload-icon {
+  font-size: 50px;
+  color: #A39A9A;
+}
+
+.file-input {
+  display: none;
+}
+
+.form-employee {
+  width: 80%;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 2%;
+}
+
+.input_wrap {
+  padding-left: 2%;
+}
+
+.form_wrap .input_grp {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.form_wrap .input_grp input {
+  border-radius: 5px;
+  width: 600px;
+  height: 40px;
+  border-color: #A7727D;
+}
+
+.form_wrap .input_grp select {
+  border-radius: 5px;
+  width: 600px;
+  height: 40px;
+  border-color: #A7727D;
+}
+
+.form_Des .input_grp input {
+  width: 800px;
+  height: 150px;
+}
+
+.continue-btn {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.continue-btn button {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: red;
+}
+
+.continue-btn button a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+  .btnlogin-logout {
+    padding-right: 50px;
+  }
+  .upload-container {
+    width: 120px;
+    height: 100px;
+  }
+  .upload-label {
+    width: 80%;
+    height: 70%;
+  }
+  .form_wrap .input_grp input, .form_wrap .input_grp select {
+    width: 100%;
+  }
+  .form_Des .input_grp input {
+    width: 100%;
+    height: 100px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .btnlogin-logout {
+    padding-right: 20px;
+  }
+  .upload-container {
+    width: 100px;
+    height: 80px;
+  }
+  .upload-label {
+    width: 90%;
+    height: 60%;
+  }
+  .upload-icon {
+    font-size: 40px;
+  }
+  .form-employee {
+    width: 95%;
+  }
+  .input_wrap {
+    padding-left: 1%;
+  }
+  .form_wrap .input_grp {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form_wrap .input_grp input, .form_wrap .input_grp select {
+    width: 90%;
+  }
+  .form_Des .input_grp input {
+    width: 90%;
+    height: 100px;
+  }
+  .continue-btn button {
+    width: 80px;
+    height: 35px;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+  .btnlogin-logout {
+    padding-right: 10px;
+  }
+  .upload-container {
+    width: 80px;
+    height: 60px;
+  }
+  .upload-label {
+    width: 100%;
+    height: 50%;
+  }
+  .upload-icon {
+    font-size: 30px;
+  }
+  .input_wrap {
+    padding-left: 0;
+  }
+  .form_wrap .input_grp input, .form_wrap .input_grp select {
+    width: 100%;
+  }
+  .form_Des .input_grp input {
+    width: 100%;
+    height: 80px;
+  }
+  .continue-btn button {
+    width: 70px;
+    height: 30px;
+  }
+}

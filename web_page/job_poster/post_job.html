@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post_job</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/post_job.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/indext_style.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/header_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../../assets/logos/logo_2.png" alt="Logo">
+        </div>
+        <div class="menu">
+            <a href="../../index.html">HOME</a>
+            <a href="web_page/employee/all_job.html">JOB</a>
+            <a href="contact_us.html">CONTACT</a>
+            <a href="about_us.html">ABOUT US</a>
+        </div>
+        <div class="btnlogin-logout">
+            <button><a href="/web_page/login.html" style="text-decoration: none;color: black;">Login</a></button>
+            <button><a href="/web_page/sign_up.html" style="text-decoration: none;color: black;">Register</a></button>
+        </div>
+    </div>
+        <div class="backround"></div>
+        <div class="container">
+            <form class="form-employee">
+                <br>
+               <h3 style="text-align: center; color: #003370;"><b>Post your Job here</b></h3>
+               <p style="text-align: center; color: red;">Please Enter Your Job Information</p>
+                <div class="form_wrap">
+                        <div class="input_grp">
+                            <div class="input_wrap">
+                                <div class="upload-container">
+                                    <label style="padding-left:1%;" style="color: #003370;"><b>Upload Logo</b></label>
+                                    <label for="file-upload" class="upload-label">
+                                        <div class="upload-icon">+</div>
+                                    </label>
+                                    <input type="file" id="file-upload" class="file-input" accept="image/*">
+                                </div>
+                                <br>
+                                <label for="Desired Industry"style="text-align: center; color: #003370;"><b>Job Type</b></label>
+                                <br>
+                            <select id="Industry" name="Industry" required>
+                                <option value="Please Choose">Please Choose</option>
+                                <option value="a1">Architecture/Engineering</option>
+                                <option value="a2">business</option>
+                                <option value="a3">Education/Training</option>
+                                <option value="a4">Marketing</option>
+                                <option value="a6">Customer Service</option>
+                                <option value="a7">Information Technology</option>
+                                <option value="a8">Sale</option>
+                                <option value="a9">Medical/Health/Nursing</option>
+                                <option value="a10">Graphic Design</option>
+                                <option value="R11">Management</option>
+                            </select>       
+                            </div>                        
+                        </div>
+                        <div class="form_wrap">
+                            <div class="input_grp">
+                              <div class="input_wrap">
+                                <label for="lname" style="color: #003370;"><b>Job Title</b></label><br>
+                                <input type="text" id="fname">
+                              </div>
+                            </div>
+                        <div class="input_grp">
+                            <div class="input_wrap">
+                            <label for="Desired Position" style=" color: #003370;"><b>Experience</b</label><br>
+                            <select id="Desired Position" name="Experience" required>
+                                <option value="Please Choose">Please Choose</option>
+                                <option value="a">1-3year</option>
+                                <option value="b">3-5year</option>
+                                <option value="c">5-10year</option>
+                                <option value="d">10year more</option>
+                                <option value="e">Other</option>
+                            </select>
+                            </div>
+                        </div>
+                    <div class="form_Des">
+                        <div class="input_grp">
+                          <div class="input_wrap">
+                            <label for="description" style="color: #003370;"><b>Description</b></label><br>
+                            <input type="text" id="description">
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form_wrap">
+                        <div class="input_grp">
+                          <div class="input_wrap">
+                            <label for="lname"style="text-align: center; color: #003370;"><b>Company name</b></label><br>
+                            <input type="text" id="fname">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="form_wrap">
+                        <div class="input_grp">
+                          <div class="input_wrap">
+                            <label for="lname"style=" color: #003370;"><b>Email</b></label><br>
+                            <input type="email" id="email">
+                          </div>
+                        </div>
+                        </div>
+                    <div class="form_wrap">
+                        <div class="input_grp">
+                          <div class="input_wrap">
+                            <label for="lname"style="color: #003370;"><b>Phone Number</b></label><br>
+                            <input type="number" id="pnumber">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="form_wrap">
+                        <div class="input_grp">
+                            <div class="input_wrap">
+                                <label for="Desired Industry"style="color: #003370;"><b>City/Province*</b></label>
+                                <br>
+                                <select id="provinces" name="provinces">
+                                    <option value="Please Choose">Please Choose</option>
+                                    <option value="Please Choose">Pnom Penh</option>
+                                    <option value="Banteay Meanchey">Banteay Meanchey</option>
+                                    <option value="Battambang">Battambang</option>
+                                    <option value="Kampong Cham">Kampong Cham</option>
+                                    <option value="Kampong Chhnang">Kampong Chhnang</option>
+                                    <option value="Kampong Speu">Kampong Speu</option>
+                                    <option value="Kampong Thom">Kampong Thom</option>
+                                    <option value="Kampot">Kampot</option>
+                                    <option value="Kandal">Kandal</option>
+                                    <option value="Kep">Kep</option>
+                                    <option value="Koh Kong">Koh Kong</option>
+                                    <option value="Kratie">Kratie</option>
+                                    <option value="Mondulkiri">Mondulkiri</option>
+                                    <option value="Oddar Meanchey">Oddar Meanchey</option>
+                                    <option value="Pailin">Pailin</option>
+                                    <option value="Phnom Penh">Phnom Penh</option>
+                                    <option value="Preah Sihanouk">Preah Sihanouk</option>
+                                    <option value="Preah Vihear">Preah Vihear</option>
+                                    <option value="Prey Veng">Prey Veng</option>
+                                    <option value="Pursat">Pursat</option>
+                                    <option value="Ratanakiri">Ratanakiri</option>
+                                    <option value="Siem Reap">Siem Reap</option>
+                                    <option value="Stung Treng">Stung Treng</option>
+                                    <option value="Svay Rieng">Svay Rieng</option>
+                                    <option value="Takeo">Takeo</option>
+                                    <option value="Tboung Khmum">Tboung Khmum</option>
+                                  </select>              
+                            </div>                        
+                        </div>
+                        <div class="form_wrap">
+                            <div class="input_grp">
+                              <div class="input_wrap">
+                                <label for="lname"style=" color: #003370;"><b>Khan/District*</b></label><br>
+                                <input type="text" id="Khan/District">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="form_wrap">
+                            <div class="input_grp">
+                              <div class="input_wrap">
+                                <label for="lname"style="color: #003370;">Sangkat/Commune*</label><br>
+                                <input type="text" id="Sangkat/Commune">
+                              </div>
+                            </div>
+                        </div>
+                        <section class="map" style="width: 90%;padding-left: 12%;">
+                            <h4 style="color: #003370;">Location Detail*</h4>
+                            <iframe
+                              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3908.4884007138176!2d104.9276018!3d11.5884873!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310953fd9f9a51e9%3A0xc26eafcd2ed5ca29!2z4Z6f4Z624Z6A4Z6b4Z6c4Z634Z6R4Z-S4Z6Z4Z624Z6b4Z-Q4Z6ZIOGek-GfkOGemuGej-Geu-Gekw!5e0!3m2!1skm!2skh!4v1712374780705!5m2!1skm!2skh"
+                              height="450"
+                              width="100%"
+                              style="border: 0"
+                              allowfullscreen=""
+                              loading="lazy"
+                              referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                          </section>
+                        <br>
+                    <div class="continue-btn">
+                        <button><a href="/web_page/job_poster/profilepage.html">Continue</a></button>
+                    </div>                 
+               </form>
+            </div>
+        </div>
+    </div>
+        <div class="A">
+            <footer class="footer">
+                <div class="footer-column">
+                    <h3>How to Apply</h3>
+                    <ul>
+                        <li><a href="#">Application Process</a></li>
+                        <li><a href="#">Requirements</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Deadlines</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="#">Programs</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Email: info@example.com</li>
+                        <li>Phone: +123-456-7890</li>
+                        <li>Address: 123 Main St, City, Country</li>
+                    </ul>
+                </div>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="tel:+1234567890" title="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                  </div>
+            </footer>
+          </div>
+        
+</body>
+ </html>

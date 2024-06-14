@@ -1,0 +1,85 @@
+.btnlogin-logout button {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+}
+.btnlogin-logout {
+    padding-right: 150px;
+}
+
+.upload-container {
+    position: relative;
+    width: 150px;
+    height: 120px;
+    padding-left: 3%;
+}
+.upload-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    border: 2px solid #A39A9A;
+    border-radius: 50%;
+    
+}
+
+.upload-label:hover {
+    border-color: #A39A9A;
+}
+
+.upload-icon {
+    font-size: 50px;
+    color: #A39A9A;
+}
+
+.file-input {
+    display: none;
+}
+.form-employee{
+    width: 80%;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 2%;
+
+}
+.input_wrap{
+    padding-left: 2%;
+    
+}
+.form_wrap .input_grp{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.form_wrap .input_grp  input{
+    border-radius: 5px;
+    width: 490px;
+    height: 40px;
+    border-color: #A7727D;
+}
+.form_wrap .input_grp  select{
+    border-radius: 5px;
+    width: 490px;
+    height: 40px;
+    border-color: #A7727D;
+}
+.form_Des .input_grp  input{
+    width: 800px;
+    height: 150px;
+
+}
+.continue-btn{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.continue-btn button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color:#003370;
+}
+.continue-btn button a{
+    color: #ffff;
+    text-decoration: none;
+}

@@ -1,0 +1,245 @@
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+
+/* Navigation Menu Styling */
+.menu {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.menu a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #003370;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-column {
+    width: 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner Image Styling */
+.banner_img {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Body Container Styling */
+.body-container {
+    display: flex;
+    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Job Categories Styling */
+.job-categories {
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+/* Grid Container Styling */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Job Card Styling */
+.job-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+/* Background Image Styling */
+.backround {
+    background-image: url(/assets/images/background_image.jpg);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Navigation List Styling */
+.list {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003370;
+    display: flex;
+    height: 50px;
+}
+
+.list li a {
+    text-decoration: none;
+    padding: 15px 30px;
+    color: white;
+}
+
+li img {
+    width: 40px;
+    padding-left: 10px;
+}
+
+/* Container Styling */
+.container {
+    padding-top: 2%;
+    justify-content: center;
+    display: flex;
+}
+
+/* Footer Styling */
+.foorter {
+    justify-content: space-around;
+}
+
+/* Circle Image Styling */
+.circle-img {
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+/* Card List Styling */
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+}
+
+/* Button Styling */
+.button button {
+    border-radius: 10px;
+    height: 40px;
+    color: #ffffff;
+    border-color: #A7727D;
+    width: 100px;
+}
+
+.button {
+    padding-left: 10%;
+    justify-content: space-between;
+    display: flex;
+}
+
+/* Review Styling */
+.review {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review a {
+    text-decoration: none;
+}
+
+/* Post Job Button Styling */
+.btn-postjob {
+    padding-left: 55%;
+    justify-content: space-between;
+    display: flex;
+}
+
+.btn-postjob button {
+    background-color: red;
+    height: 40px;
+    width: 120px;
+    border-radius: 50px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .body-container, .banner_img, .job-categories, .grid-container, .card-list, .btn-postjob {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .list li a {
+        padding: 15px 10px;
+    }
+
+    .button, .btn-postjob {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job-categories {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .card-list {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .btn-postjob {
+        padding-left: 0;
+    }
+}
