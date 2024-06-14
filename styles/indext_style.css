@@ -432,7 +432,7 @@ body {
     align-content: start;
     align-items: start;
     padding: 20px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
 
 .popular {
@@ -674,6 +674,7 @@ li img {
     padding-left: 200px;
     padding-right: 200px;
 }
+
 @media (max-width: 1200px) {
 
     .banner_img,
