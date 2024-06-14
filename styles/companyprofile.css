@@ -33,7 +33,6 @@ body {
     padding: 20px;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -87,14 +86,14 @@ body {
     width: 100%;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
     gap: 10px;
 }
 
 /* Grid Container Styling */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
     grid-gap: 20px;
 }
 
@@ -202,44 +201,4 @@ li img {
     height: 40px;
     width: 120px;
     border-radius: 50px;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .body-container, .banner_img, .job-categories, .grid-container, .card-list, .btn-postjob {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .footer-column {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .list li a {
-        padding: 15px 10px;
-    }
-
-    .button, .btn-postjob {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .job-categories {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-
-    .grid-container {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-
-    .card-list {
-        flex-direction: column;
-        align-items: center;
-        padding-right: 0;
-    }
-
-    .btn-postjob {
-        padding-left: 0;
-    }
 }

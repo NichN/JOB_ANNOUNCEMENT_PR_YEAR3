@@ -34,7 +34,6 @@
 .row {
   display: flex;
   flex-wrap: nowrap;
-  /* Removed overflow-x to ensure proper layout */
 }
 
 .img p {
