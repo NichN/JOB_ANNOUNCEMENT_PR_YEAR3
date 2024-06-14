@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             id: '1',
             image: 'assets/images/job1.png',
-            title: 'Software Engineer',
+            title: 'Software Engineerkretj',
             company: 'Tech Corp',
             location: 'New York, NY',
             term: 'Full-time',

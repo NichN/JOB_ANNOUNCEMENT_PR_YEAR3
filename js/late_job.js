@@ -31,6 +31,22 @@ const jobs = [
         requirements: 'Requirements for the job include...',
         benefits: 'Benefits of the job include...'
     },
+        {
+            id: '2',
+            image: 'assets/images/job2.png',
+            title: 'Graphic Designer',
+            company: 'Design Studio',
+            location: 'Los Angeles, CA',
+            term: 'Part-time',
+            posted: '2023-05-25',
+            salary: '$60,000',
+            experience: '1+ years',
+            description: 'Create visual concepts to communicate ideas...',
+            companyDescription: 'Design Studio specializes in branding and design...',
+            responsibilities: 'Responsibilities of the job include...',
+            requirements: 'Requirements for the job include...',
+            benefits: 'Benefits of the job include...'
+        },
     // Add more job objects as needed
 ];
 

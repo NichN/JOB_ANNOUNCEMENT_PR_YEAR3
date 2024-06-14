@@ -35,6 +35,19 @@ const popular_jobs = [
         link: "job_detail2.html",
         icon: "fas fa-cogs"
     }
+    {
+     title: "Senior Accountant",
+              company: "ABC Corp.",
+              location: "New York, NY",
+              posted: "10 days ago",
+              salary: "$90,000 - $110,000",
+              image: "assets/logos/logo_3.png",
+              description: "Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.",
+              companyDescription": "ABC Corp. specializes in financial services and provides top-notch solutions to its clients.",
+              link: "job_detail3.html",
+              icon: "fas fa-calculator"
+    }
+
 ];
 const popularJobContainer = document.getElementById('popular-job-container');
 popular_jobs.forEach(job => {
