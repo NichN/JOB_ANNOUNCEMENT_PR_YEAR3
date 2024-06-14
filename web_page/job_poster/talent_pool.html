@@ -6,6 +6,7 @@
     <title>Talent Pool</title>
     <link rel="stylesheet" type="text/css" href="../../styles/header_style.css">
     <link rel="stylesheet" type="text/css" href="../../styles/indext_style.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/talent_pool.css">
     <link rel="icon" href="../../assets/logos/logo_2.png" width="70" height="70">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
@@ -31,7 +32,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .dropdown-categories button {
@@ -55,9 +56,10 @@
     font-size: 20px;
     /* display: flex; */
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 150px;
     padding-left: 60px;
+
 }
 
 .job-detail button {
@@ -66,7 +68,7 @@
     color: #A7727D;
     font-size: 20px;
     cursor: pointer;
-    margin: 5px 10px; 
+    margin: 5px 10px;
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -105,7 +107,7 @@
     font-size: 16px;
     cursor: pointer;
     border-radius: 15px;
-    margin-left: auto; 
+    margin-left: auto;
 }
 .flex-container {
     /* display: flex; */
@@ -118,7 +120,7 @@
 }
 
 .employee-card {
-    display: flex; 
+    display: flex;
     align-items: center;
     background-color: #fff;
     border-radius: 10px;
@@ -128,6 +130,7 @@
     position: relative;
     padding: 5px;
     margin-bottom: 15px;
+
 }
 
 .card-button {
@@ -136,10 +139,11 @@
 }
 
 .employee-card img {
-    width: 150px; 
+    width: 150px;
     height: 150px;
-    border-radius: 10px 0 0 10px;
-    margin-right: 10px; 
+    border-radius: 80px 80px 80px 80px;
+    margin-right: 10px;
+
 }
 
 .card-content {
@@ -166,15 +170,15 @@
 }
 
 .icon-text img {
-    width: 16px; 
-    height: auto; 
-    margin-right: 5px; 
+    width: 16px;
+    height: auto;
+    margin-right: 5px;
     display: inline-block;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
 .icon-text p {
-    margin: 0; 
+    margin: 0;
     font-size: 1em;
     color: #000000;
 }
@@ -184,12 +188,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative; 
+    position: relative;
 }
 
 .paper-icon {
     position: relative;
-    
+
 }
 
     </style>
@@ -256,24 +260,30 @@
         </div>
     </div>
     <div class="job-detail">
-        <div style="display: flex;">
+        <div style="display: flex;padding-bottom:20px;">
             <p>Job Type:</p>
             <button onclick="selectJobType(this, 'fulltime')">Fulltime</button>
             <button onclick="selectJobType(this, 'partime')">Partime</button>
             <button onclick="selectJobType(this, 'intern')">Intern</button>
         </div>
-        <div style="display: flex;">
+        <div style="display: flex;padding-bottom:20px;">
             <p>Language:</p>
             <button onclick="selectLanguage(this, 'english')">Khmer</button>
             <button onclick="selectLanguage(this, 'spanish')">English</button>
             <button onclick="selectLanguage(this, 'french')">Chinese </button>
         </div>
-        <div style="display: flex;">
+        <div style="display: flex; padding-bottom:20px" class="col-3" >
             <p>Education:</p>
+
+            <button onclick="selectEducation(this, 'no limit')">No Limit</button>
+            <button onclick="selectEducation(this, 'middle school')">Middle School</button>
+            <button onclick="selectEducation(this, 'secondary school')">Secondary Technical School</button>
             <button onclick="selectEducation(this, 'highschool')">High School</button>
+            <button onclick="selectEducation(this, 'junior')">Junior College</button>
             <button onclick="selectEducation(this, 'bachelor')">Bachelor's</button>
             <button onclick="selectEducation(this, 'master')">Master's</button>
-        </div>                
+
+        </div>
     </div>
     <div class="button-container">
         <h5 class="All">All</h5>
