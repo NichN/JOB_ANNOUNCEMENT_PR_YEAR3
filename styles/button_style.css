@@ -70,12 +70,12 @@ h1 {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: #A7727D;
     color: white;
 }
 
 .job-button:hover {
-    background-color: #45a049;
+    background-color: #a88b91;
 }
 
 .job-list {

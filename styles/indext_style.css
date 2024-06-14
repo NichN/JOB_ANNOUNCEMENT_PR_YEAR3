@@ -746,4 +746,86 @@ li img {
         margin: 0;
         margin-bottom: 20px;
     }
+
+    .job-categories {
+
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+
+    }
+
+    .grid-container {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        grid-gap: 20px;
+
+    }
+
+    .job-card {
+        background: white;
+
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .job-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .job-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .job-card .card-content {
+        padding: 20px;
+    }
+
+    .job-card h3 {
+        margin: 0 0 10px;
+    }
+
+    .job-card p {
+        margin: 0px 0;
+        color: #555;
+    }
+
+    .job-card .icon-text {
+        display: flex;
+        align-items: initial;
+        margin-bottom: 10px;
+    }
+
+    .job-card .icon-text i {
+        margin-right: 10px;
+
+
+    }
+
+    .job-card .salary {
+        color: #28a745;
+        font-weight: bold;
+    }
+
+    .job-card .company-description {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+
+    .job-categories button {
+        background-color: #A7727D;
+    }
 }
+
