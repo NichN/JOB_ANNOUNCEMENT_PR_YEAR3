@@ -107,29 +107,34 @@ latest_jobs.forEach(job => {
     jobCard.innerHTML = `
         <img src="${job.image}" alt="${job.company}">
         <div class="card-content">
+        <a href="job_detail.html?title=${encodeURIComponent(job.title)}" style= "text-decoration: none;">
+         <h3>${job.title}</h3>
+        <div class="icon-text">
 
-            <h3><a href="job_detail.html?title=${encodeURIComponent(job.title)}">${job.title}</a></h3>
-            <div class="icon-text">
-                <i class="${job.icon}"></i>
-                <p>${job.company}</p>
-            </div>
-            <div class="icon-text">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>${job.location}</p>
-            </div>
-            <div class="icon-text">
-                <i class="fas fa-calendar-alt"></i>
-                <p>${job.posted}</p>
-            </div>
-            <div class="icon-text">
-                <i class="fas fa-dollar-sign"></i>
-                <p class="salary">${job.salary}</p>
-            </div>
-            <p>${job.description}</p>
-            <div class="company-description">
-                <p>${job.companyDescription}</p>
-            </div>
-        </div>
+                        <i class="fas fa-building"></i>
+                        <p>${job.company}</p>
+                    </div>
+                    <div class="icon-text">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>${job.location}</p>
+                    </div>
+                    <div class="icon-text">
+                        <i class="fas fa-calendar-alt"></i>
+                        <p>${job.posted}</p>
+                    </div>
+                    <div class="icon-text">
+                        <i class="fas fa-dollar-sign"></i>
+                        <p class="salary">${job.salary}</p>
+                    </div>
+                    <p>${job.description}</p>
+                    <div style = "text-align : center;"  class="company-description">
+                        <p>${job.companyDescription}</p>
+                    </div>
+                </div>
+
+
+
+
     `;
 
     latestJobContainer.appendChild(jobCard);
@@ -142,11 +147,11 @@ popular_jobs.forEach(job => {
 
     jobCard.innerHTML = `
         <img src="${job.image}" alt="${job.company}">
-        <div class="card-content">
-            <h3><a href="job_detail.html?title=${encodeURIComponent(job.title)}">${job.title}</a></h3>
+        <div class="card-content"  style = "text-align : center;">
+            <h3><a href="job_detail.html?title=${encodeURIComponent(job.title)}" style= "text-decoration: none;">${job.title}</a></h3>
             <div class="icon-text">
                 <i class="${job.icon}"></i>
-                <p>${job.company}</p>
+                <p  >${job.company}</p>
             </div>
             <div class="icon-text">
                 <i class="fas fa-map-marker-alt"></i>
@@ -161,9 +166,7 @@ popular_jobs.forEach(job => {
                 <p class="salary">${job.salary}</p>
             </div>
             <p>${job.description}</p>
-            <div class="company-description">
-                <p>${job.companyDescription}</p>
-            </div>
+
         </div>
     `;
 

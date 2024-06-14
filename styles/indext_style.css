@@ -674,8 +674,6 @@ li img {
     padding-left: 200px;
     padding-right: 200px;
 }
-
-/* Media Queries for Responsive Design */
 @media (max-width: 1200px) {
 
     .banner_img,
