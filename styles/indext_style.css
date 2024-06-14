@@ -374,7 +374,7 @@ body {
 }
 
 .job-card .salary {
-    color: #28a745;
+    color: #A7727D;
     font-weight: bold;
 }
 
@@ -402,7 +402,7 @@ body {
 }
 
 .showmore-btn {
-    background-color: #4CAF50;
+    background-color: #A7727D;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -432,6 +432,7 @@ body {
     align-content: start;
     align-items: start;
     padding: 20px;
+    margin-bottom:20px;
 }
 
 .popular {
@@ -623,12 +624,12 @@ li img {
     cursor: pointer;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: #A7727D;
     color: white;
 }
 
 .job-button:hover {
-    background-color: #45a049;
+    background-color: #A7727D;
 }
 
 .job-list {
@@ -814,7 +815,7 @@ li img {
     }
 
     .job-card .salary {
-        color: #28a745;
+        color: #A7727D;
         font-weight: bold;
     }
 
@@ -828,4 +829,3 @@ li img {
         background-color: #A7727D;
     }
 }
-

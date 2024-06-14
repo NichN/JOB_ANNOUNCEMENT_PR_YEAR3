@@ -8,7 +8,21 @@
     <link rel="stylesheet" type="text/css" href="../../styles/header_style.css">
     <link rel="stylesheet" type="text/css" href="../../styles/indext_style.css">
     <link rel="icon" href="../../assets/logos/logo_2.png">
-
+    <style>
+        .all {
+      background-color: #003370;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      border-radius: 15px;
+  }
+    </style>
 </head>
 
 <body>
@@ -17,7 +31,7 @@
         <img onclick="window.history.back()" src="../../assets/logos/tranparent_logo_2.png" alt="Logo">
     </div>
     <div class="nav-menu">
-        <a href="#">Home</a>
+        <a href="../../index.html">Home</a>
         <a href="../../web_page/employee/all_job.html">Job</a>
         <a href="../../web_page/employee/save_job.html">Save</a>
         <a href="../../web_page/employee/about_us.html">About</a>
@@ -52,12 +66,16 @@
     <img src="../../assets/images/banner.png" style="height: 400px;">
 </div>
 <div class="row">
-    <h5 class="latest">Popular</h5>
+    <h5 class="all">Popular</h5>
 
 </div>
 <div class="grid-container" id="all-job-container" style="padding-left : 200px;padding-right:150px;"></div>
 <script src="../../js/all_job.js"></script>
 <script src="../../js/jobs.js"></script>
+<script src="../../js/joblist.js"></script>
+<script src="../../js/latest_popoular.js"></script>
+<script src="../../js/latest_popular_detail.js"></script>
+
 </body>
 
 </html>

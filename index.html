@@ -15,6 +15,27 @@
             window.location.href = `web_page/employee/job_category.html?job=${job}`;
         };
     </script>
+    <style>
+        .button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #A7727D;
+
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top:20px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: #ffffff;
+}
+
+    </style>
 
 
 </head>
@@ -25,7 +46,7 @@
             <img onclick="window.history.back()" src="assets/logos/tranparent_logo_2.png" alt="Logo">
         </div>
         <div class="nav-menu">
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
             <a href="web_page/employee/all_job.html">Job</a>
             <a href="web_page/employee/save_job.html">Save</a>
             <a href="web_page/employee/about_us.html">About</a>
@@ -76,10 +97,10 @@
         </div>
         <h5 class="latest" style="padding-bottom : 10px;">Latest</h5>
         <div class="grid-container" id="latest-job-container"></div>
-        <button class="showmore-btn" onclick="redirectToPage('latest_job.html')">Show More</button>
+        <a href="web_page/employee/latest_job.html" class="button"> Show More</a>
         <h5 class="latest" style="padding-bottom : 10px;">Popular</h5>
         <div class="grid-container" id="popular-job-container"></div>
-        <button class="showmore-btn"  onclick="redirectToPage('web_page/employee/popular_job.html')">Show More</button>
+        <a href="web_page/employee/popular_job.html" class="button"> Show More</a>
     </div>
 
     <footer class="footer">
@@ -127,7 +148,7 @@
         </div>
     </footer>
 
-    <script src="js/dropdown_menu_profile.js"></script>
+
     <script src="js/jobs.js"></script>
     <script src="js/latest_popoular.js"></script>
     <script src="js/joblist.js"></script>
