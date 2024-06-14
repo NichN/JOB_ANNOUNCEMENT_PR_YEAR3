@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.job-card {
+    background: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.job-card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.card-content h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+
+.card-content .icon-text {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.card-content .icon-text i {
+    margin-right: 10px;
+    color: #555;
+}
+
+.card-content .salary {
+    color: green;
+}
+
+.card-content p {
+    color: #555;
+}
+
+.company-description {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.showmore-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.showmore-btn:hover {
+    background-color: #0056b3;
+}

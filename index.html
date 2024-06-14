@@ -36,7 +36,7 @@
             <button type="submit">Search</button>
         </form>
         <div class="user-section">
-            <button id="loginBtn" class="login-btn" >Login</button>
+            <button id="loginBtn" class="login-btn">Login</button>
             <button id="logoutBtn" class="logout-btn">Logout</button>
             <div class="profile-icon">
                 <button class="profile-btn">
@@ -74,13 +74,12 @@
             <button class="job-button" onclick="goToJobList('Graphic Design')">Graphic Design</button>
             <button class="job-button" onclick="goToJobList('Software Engineering')">Software Engineering</button>
         </div>
-        <h5 class="latest" style="padding : 10px">Latest</h5>
+        <h5 class="latest">Latest</h5>
         <div class="grid-container" id="latest-job-container"></div>
-        <script src="js/late_job.js"></script>
-        <button class="showmore-btn" id="show-more" onclick="redirectToPage('web_page/employee/popular_job.html')">Show More</button>
-        <h5 class="popular" style="padding : 10px">Popular</h5>
+        <button class="showmore-btn" id="show-more" onclick="redirectToPage('latest_jobs.html')">Show More</button>
+        <h5 class="latest">Popular</h5>
         <div class="grid-container" id="popular-job-container"></div>
-        <button class="showmore-btn" id="show-less" onclick="window.location.href='web_page/employee/popular_job.html'">Show More</button>
+        <button class="showmore-btn" id="show-less" onclick="redirectToPage('popular_jobs.html')">Show More</button>
     </div>
 
     <footer class="footer">
@@ -130,18 +129,19 @@
 
     <script src="js/dropdown_menu_profile.js"></script>
     <script src="js/jobs.js"></script>
-     <script src="js/popular_job.js"></script>
+    <script src="js/latest_popoular.js"></script>
+
     <script>
         function goToJobList(category) {
             window.location.href = `joblist.html?category=${category}`;
         }
     </script>
     <script>
-        document.getElementById('loginBtn').onclick = function() {
+        document.getElementById('loginBtn').onclick = function () {
             window.location.href = 'web_page/login.html';
         };
 
-        document.getElementById('logoutBtn').onclick = function() {
+        document.getElementById('logoutBtn').onclick = function () {
             window.location.href = 'web_page/sign_up.html';
         };
     </script>

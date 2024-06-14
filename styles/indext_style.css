@@ -7,8 +7,6 @@ body {
     flex-direction: column;
 }
 
-
-
 .logo img {
     width: 70px;
     height: 70px;
@@ -16,7 +14,7 @@ body {
 
 .menu {
     flex-grow: 1;
-    text-align: center;
+    text-align: left;
 }
 
 .menu a {
@@ -26,20 +24,11 @@ body {
     padding: 10px 0;
 }
 
-.search-container {
-    display: flex;
-    align-items: center;
-    background-color: #003370;
-
-}
-
+.search-container,
 .search-bar {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-right: 20px;
     background-color: #003370;
-
 }
 
 .search-bar input[type="text"] {
@@ -47,7 +36,6 @@ body {
     border: 1px solid #003370;
     border-radius: 5px;
 }
-
 
 .search-bar button {
     background-color: transparent;
@@ -64,7 +52,6 @@ body {
     gap: 0px;
     background-color: transparent;
     border: white;
-
 }
 
 .login-logout button {
@@ -111,7 +98,6 @@ body {
 
 .profile-btn {
     background-color: #003370;
-
     border: none;
     cursor: pointer;
 }
@@ -153,6 +139,7 @@ body {
 .sub-dropbtn:hover {
     background-color: #ddd;
 }
+
 .footer {
     text-align: center;
     padding: 3px;
@@ -161,13 +148,10 @@ body {
 }
 
 .overlay {
-
     height: 100%;
     width: 0;
     position: fixed;
-
     z-index: 1;
-
     left: 0;
     top: 0;
     background-color: rgb(0, 0, 0);
@@ -182,7 +166,6 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 30px;
-
 }
 
 .overlay a {
@@ -192,9 +175,7 @@ body {
     color: #818181;
     display: block;
     transition: 0.3s;
-
 }
-
 
 .overlay a:hover,
 .overlay a:focus {
@@ -210,7 +191,7 @@ body {
 
 @media screen and (max-height: 450px) {
     .overlay a {
-        font-size: 20px
+        font-size: 20px;
     }
 
     .overlay .closebtn {
@@ -324,7 +305,6 @@ body {
     padding-right: 200px;
     margin-top: 5px;
     margin-bottom: 10px;
-
 }
 
 .body-container {
@@ -333,7 +313,6 @@ body {
     padding-right: 200px;
     flex-direction: column;
     align-items: center;
-
 }
 
 .job-categories {
@@ -344,19 +323,16 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-
 }
 
 .job-card {
     background: white;
-
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -395,8 +371,6 @@ body {
 
 .job-card .icon-text i {
     margin-right: 10px;
-
-
 }
 
 .job-card .salary {
@@ -432,17 +406,14 @@ body {
     border: none;
     color: white;
     padding: 10px 20px;
-
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin-top: 20px;
     margin-left: 0%;
-
     cursor: pointer;
     border-radius: 5px;
-
 }
 
 .latest {
@@ -460,15 +431,13 @@ body {
     border-radius: 5px;
     align-content: start;
     align-items: start;
-    padding:20px;
-
+    padding: 20px;
 }
 
 .popular {
     background-color: #003370;
     border: none;
     color: white;
-
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -492,25 +461,20 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
-
 }
 
 .dropdown-content {
-
     display: none;
     position: absolute;
     background-color: #fff;
     min-width: 160px;
-
     border-radius: 5px;
     z-index: 1;
     text-align: left;
 }
 
-
 .dropdown:hover .dropdown-content {
     display: block;
-
 }
 
 .dropdown-content a {
@@ -525,14 +489,12 @@ body {
     position: absolute;
     background-color: #fff;
     min-width: 160px;
-    /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); */
     left: 100%;
     top: 0;
 }
 
 .sub-dropdown:hover .sub-dropdown-content {
     display: block;
-
 }
 
 .sub-dropbtn {
@@ -544,18 +506,14 @@ body {
     width: 100%;
 }
 
-
 .sub-dropbtn:hover {
     background-color: #003370;
 }
-
 
 .search-bar {
     display: flex;
     align-items: center;
     padding-right: 30%;
-
-
 }
 
 .search-bar input[type="text"] {
@@ -578,29 +536,32 @@ body {
 .search-bar button:hover {
     background-color: #0056b3;
 }
-.backround{
+
+.background {
     background-image: url(/assets/images/background_image.jpg);
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: -1;
 }
-.list{
+
+.list {
     list-style-type: none;
     padding: 0px;
     overflow: hidden;
-    background-color:#003370;
+    background-color: #003370;
     display: flex;
     height: 50px;
 }
-.list li a{
+
+.list li a {
     text-decoration: none;
     padding: 15px 10px;
     color: white;
     padding-left: 30px;
-
 }
-li img{
+
+li img {
     width: 40px;
     padding-left: 10px;
 }
@@ -610,49 +571,45 @@ li img{
     justify-content: center;
     display: flex;
 }
-.foorter{
+
+.footer {
     justify-content: space-around;
 }
+
 .circle-img {
     height: 150px;
     width: 150px;
     border-radius: 100%;
     object-fit: cover;
 }
-.card-list{
+
+.card-list {
     display: flex;
     justify-content: space-between;
     padding-right: 80px;
 }
-.button button{
+
+.button button {
     border-radius: 10px;
     height: 40px;
     color: #ffffff;
     border-color: #A7727D;
     width: 100px;
 }
-.button{
+
+.button {
     padding-left: 10%;
     justify-content: space-between;
     display: flex;
 }
-.review{
+
+.review {
     display: flex;
     justify-content: space-between;
 }
-.review a{
+
+.review a {
     text-decoration: none;
-}
-.btn-postjob{
-    padding-left: 55%;
-    justify-content: space-between;
-    display: flex;
-}
-.btn-postjob button{
-   background-color: red;
-   height: 40px;
-   width: 120px;
-   border-radius: 50px;
 }
 
 .job-buttons {
@@ -710,10 +667,83 @@ li img{
 }
 
 .row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-left : 200px;
-            padding-right : 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
 
-        }
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+
+    .banner_img,
+    .body-container,
+    .row {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .job-categories {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .banner_img,
+    .body-container,
+    .row {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .job-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .search-bar input[type="text"] {
+        width: 100%;
+    }
+
+    .menu a {
+        margin: 0 10px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .banner_img,
+    .body-container,
+    .row {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .job-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
