@@ -45,19 +45,19 @@ const jobs = [
         "category": "Information Technology"
     },
     {
-        "title": "Systems Analyst",
-        "company": "Data Corp",
-        "location": "Dallas, TX",
-        "posted": "5 days ago",
-        "salary": "$75,000 - $95,000",
-        "image": "assets/logos/com_3.png",
-        "description": "Analyze and improve IT systems and processes. Work with stakeholders to gather requirements.",
-        "companyDescription": "Data Corp specializes in providing data-driven solutions for various industries.",
-        "icon": "it.png",
-        "term": "3 year+",
-        "position": "Analyst",
-        "experience": "4 - 6 years",
-        "category": "Information Technology"
+        title: "Systems Analyst",
+        company: "Data Corp",
+        location: "Dallas, TX",
+        posted: "5 days ago",
+        salary: "$75,000 - $95,000",
+        image: "assets/logos/com_3.png",
+        description: "Analyze and improve IT systems and processes. Work with stakeholders to gather requirements.",
+        companyDescription: "Data Corp specializes in providing data-driven solutions for various industries.",
+        icon: "it.png",
+        term: "3 year+",
+        position: "Analyst",
+        experience: "4 - 6 years",
+        category: "Information Technology"
     },
     {
         "title": "IT Support Specialist",

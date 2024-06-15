@@ -12,15 +12,21 @@ document.addEventListener('DOMContentLoaded', function () {
         const jobItem = document.createElement('div');
         jobItem.className = 'job-item';
         jobItem.innerHTML = `
-            <h2><a href="job_detail.html?title=${encodeURIComponent(job.title)}">${job.title}</a></h2>
-            <img src="${job.image}" alt="${job.title}">
-            <p>${job.description}</p>
-            <p><strong>Company:</strong> ${job.company}</p>
-            <p><strong>Location:</strong> ${job.location}</p>
-            <p><strong>Posted:</strong> ${job.posted}</p>
-            <p><strong>Salary:</strong> ${job.salary}</p>
-            <p><strong>Term:</strong> ${job.term}</p>
-            <p><strong>Position:</strong> ${job.position}</p>
+        <a href="job_detail.html?title=${encodeURIComponent(job.title)}" style="text-decoration : none;">
+
+
+                    <img src="${job.image}" alt="${job.title}">
+                      <h2 style = "padding-top : 10px;color : black">${job.title}</h2>
+                    <p><strong>Company:</strong> ${job.company}</p>
+                    <p><strong>Location:</strong> ${job.location}</p>
+                    <p><strong>Posted:</strong> ${job.posted}</p>
+                    <p><strong>Salary:</strong> ${job.salary}</p>
+                    <p><strong>Term:</strong> ${job.term}</p>
+                    <p><strong>Experience:</strong> ${job.experience}</p>
+                    <p><strong>Position:</strong> ${job.position}</p>
+                     <p>${job.description}</p>
+        </a>
+
         
         `;
         return jobItem;

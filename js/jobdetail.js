@@ -2,7 +2,7 @@ function getQueryParameter(name) {
     const urlParams = new URLSearchParams(window.location.search);
     const param = urlParams.get(name);
     console.log(`Query Parameter - ${name}:`, param); // Log the parameter value
-    return param;
+    return param ? param.trim().toLowerCase() : null;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
     }
 
-    const job = jobs.find(job => job.title === title);
+    const job = jobs.find(job => job.title.trim().toLowerCase() === title);
     console.log('Matched Job:', job);
 
     if (job) {

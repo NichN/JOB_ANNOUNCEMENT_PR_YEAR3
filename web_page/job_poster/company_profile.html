@@ -4,204 +4,273 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" type="text/css" href="../../styles/companyprofile.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/header_style.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/indext_style.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
-    .A{
-    padding-top: 50%;
-}
-.menu1{
-    display: flex;
-    justify-content: space-between;
-}
-.navbar1{
-    display: flex;
-    align-items: center;
-    background-color: #003370;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
+        .btn-postjob button {
+                background-color: #A7727D;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
 
-}
-.menu1 a{
-    padding-left:50px ;
-    list-style-type: none;
-    text-decoration: none;
-    color: white;
-}
+            .btn-postjob button a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .card {
+                margin: 20px 250px 10px 250px;
+                border-radius: 25px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            }
+
+            .card .circle-img {
+                border-radius: 100%;
+                height: 250px;
+                width: 250px;
+               align : left;
+            }
+
+            .card .square-img {
+                border-radius: 10px;
+                height: 200px;
+                width: 200px;
+            }
+
+            .card-title {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            .card-list ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .card-list ul li {
+                margin-bottom: 10px;
+            }
+
+            .custom-button {
+                background-color: #A7727D;
+                width: 153px;
+                margin-right: 10px;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .custom-button:last-child {
+                margin-right: 0;
+            }
+
+            .review p {
+                margin-bottom: 5px;
+            }
 </style>
 </head>
 <body>
-   <div class="backround">
-   </div> 
-   <div class="navbar1">
+<div class="navbar" style="padding-left:200px;padding-right:200px">
     <div class="logo">
-        <img src="../../assets/logos/logo_2.png" alt="Logo">
+        <img onclick="window.history.back()" src="../../assets/logos/tranparent_logo_2.png" alt="Logo">
     </div>
-    <div class="menu1">
-        <a href="../../index.html">HOME</a>
-        <a href="all_job.html">JOB</a>
-        <a href="contact_us.html">CONTACT</a>
-        <a href="about_us.html">ABOUT US</a>
+    <div class="nav-menu">
+        <a href="../../index.html">Home</a>
+        <a href="../../web_page/employee/all_job.html">Job</a>
+        <a href="../../web_page/employee/save_job.html">Save</a>
+        <a href="../../web_page/employee/about_us.html">About</a>
+        <a href="../../web_page/employee/contact_us.html">Contact Us</a>
     </div>
-    <div class="btn-postjob">
-            <button><a href="post_job.html" style="text-decoration: none;">Post Job</a></button>
-    </div>
-    </div>
-    <div class="container">
-        <div class="card" style="width:800px; height: 260px; border-radius: 25px;">
-            <div class="row g-0">
-                <div class="col-md-4 d-flex justify-content-center" style="padding-top: 50px;" >
-                    <img src="/assets/images/image_1.jpg" class="circle-img">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">Ny sreynich</h5>
-                        <p>______________________________________________</p>
-                        <div class="card-list">
-                            <ul>
-                                <li>Username:Ny sreynich</li>
-                                <li>Account Type: Normal</li>
-                                <li>Connect with facebook:<a href="#"><img src="/assets/Icons/facebook.png"></a></li>
-                            </ul>
-                            <ul>
-                                <li>Phone: 0968681842</li>
-                                <li>Email:</li>
-                                <li>Location:</li>
-                            </ul>
-                        </div>
-                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+    <form id="form" role="search" class="search-form">
+        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+        <button type="submit">Search</button>
+    </form>
+    <div class="user-section">
+        <button id="loginBtn" class="login-btn">Login</button>
+        <button id="logoutBtn" class="logout-btn">Logout</button>
+        <div class="profile-icon">
+            <button class="profile-btn">
+                <img src="../../assets/images/profiles.png" alt="Profile Icon">
+            </button>
+            <div class="dropdown-content">
+                <a href="../../web_page/job_poster/employee_profile.html">My Profile</a>
+                <div class="sub-dropdown">
+                    <a href="#" class="sub-dropbtn">Post Job</a>
+                    <div class="sub-dropdown-content">
+                        <a href="../../web_page/job_poster/company_profile.html">Enterprise</a>
+                        <a href="../../web_page/job_poster/talent_pool.html">Talent Pool</a>
                     </div>
+                </div>
+                <a href="../../web_page/sign_up.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+       <div class="card" style="max-width: 100%;padding : 10px;">
+           <div class="row g-0">
+               <div class="col-md-4 d-flex">
+                   <img src="/assets/images/image_1.jpg" class="circle-img">
+               </div>
+               <div class="col-md-8">
+                   <div class="card-body">
+                       <h5 class="card-title">Ny Sreynich</h5>
+                       <hr>
+                       <div class="card-list d-flex justify-content-between">
+                           <ul>
+                               <li>Username: Ny Sreynich</li>
+                               <li>Account Type: Normal</li>
+                               <li>Connect with:<a href="#"></a></li>
+                               <img src="/assets/Icons/facebook.png" alt="Facebook" style="width:30px;height:30px;padding-right:10px">
+                               <img src="/assets/Icons/telegram.png" alt="Facebook" style="width:30px;height:30px;padding-right:10px">
+                               <img src="/assets/Icons/titok.png" alt="Facebook" style="width:30px;height:30px;padding-right:10px">
+                               <img src="/assets/Icons/phone.png" alt="Facebook" style="width:30px;height:30px;padding-right:10px">
+                           </ul>
+
+                           <ul>
+                               <li>Phone: 0968681842</li>
+                               <li>Email: ny@example.com</li>
+                               <li>Location: Phnom Penh</li>
+                           </ul>
+                       </div>
+                       <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                   </div>
+
+               </div>
+
+           </div>
+       </div>
+<div class="d-flex justify-content-center mb-3" style="padding-left:40%">
+    <button class="custom-button">My Post</button>
+    <button class="custom-button">Save</button>
+    <button class="custom-button">Setting</button>
+</div>
+
+    <div class="card border">
+        <div class="card-header">
+            <div class="d-flex align-items-center" style="padding: 10px;">
+                <img src="/assets/images/image_1.jpg" class="square-img">
+                <div class="title" style="padding-left: 3%;">
+                    <h4><b>Loan Zone.CO, Ltd</b></h4>
+                    <h6>Business Developer Supervisor</h6>
+                    <a><b>Job Title:</b></a><br>
+                    <a style="font-size: x-small;">Type: | Location: Phnom Penh | Date: 21 Jul 2024</a>
                     <br>
-                <br>
-                <div class="button">
-                    <button style="background-color: #A7727D;">My Post</button>
-                    <button style="background-color: #A7727D;">Save</button>
-                    <button style="background-color: #A7727D;">Setting</button>
-                </div>
-
+                    <a><b>Salary: 200$-300$/month</b></a>
+                    <br>
+                    <a style="font-size: x-small;">Experience: 1 year | Location: Phnom Penh</a>
                 </div>
             </div>
-            <br>
-        <div class="card border" style="width: 800px; height: 300px; border-radius: 25px; ">
-            <div class="card-header">
-                <div class="col-md-50 d-flex" style="padding-top: 10px;" >
-                    <img src="/assets/images/image_1.jpg" class="square-img" style="height: 120px; width: 120px;">
-                    <div class="title" style="padding-left:3%;">
-                        <h4><b>Loan Zone.CO,Ltd</b></h4>
-                        <h6>Busines Developer Supervisor</h6>
-                        <a><b>Job Title:</b></a><br>
-                        <a style="font-size: x-small;">Type:  |Location:wwwwwwww|Date:21.jul.2024</a>
-                        <br>
-                        <a><b>Salary:200$-300$/month</b></a>
-                        <br>
-                        <a style="font-size: x-small;">experience:1year | Location:Pnom Penh</a>
-                    </div>
-                </div>
-                <br>
-                <div class="review">
-                    <p style="font-size: x-small;"><img src="/assets/Icons/clock.png" style="width: 20px;">10 hour ago</p>
-                    <p style="font-size: x-small;"><img src="/assets/Icons/education.png" style="width: 20px;">more than 1 year</p>
-                    <p style="font-size: x-small;"><img src="/assets/Icons/warehouse_maid.png" style="width: 20px;">200$-300$</p>
-                    <p style="font-size: x-small;"><img src="/assets/Icons/location.png" style="width: 20px;">Pnom Penh</p>
-                </div>
-
-            </div>
-            <div class="card-body text-primary">
-                <div class="review">
-                    <a style="color: black;" href="#"><img src="/assets/Icons/cv.png" style="width: 15px;"> CV</a>
-                    <a style="color: black;" href="#"><img src="/assets/Icons/renew.png" style="width: 15px;"> Auto renew</a>
-                    <a style="color: black;" href="#"><img src="/assets/Icons/cv_renew.png" style="width: 15px;"> Renew</a>
-                    <a style="color: black;" href="#"><img src="/assets/Icons/edit.png" style="width: 15px;"> Edit</a>
-                    <a style="color: black;" href="#"><img src="/assets/Icons/cv.png" style="width: 15px;"> Delete</a>
-                </div>
+            <div class="review d-flex justify-content-around">
+                <p style="font-size: x-small;"><img src="/assets/Icons/clock.png" style="width: 20px;">10 hours ago</p>
+                <p style="font-size: x-small;"><img src="/assets/Icons/education.png" style="width: 20px;">More than 1 year</p>
+                <p style="font-size: x-small;"><img src="/assets/Icons/warehouse_maid.png" style="width: 20px;">200$-300$</p>
+                <p style="font-size: x-small;"><img src="/assets/Icons/location.png" style="width: 20px;">Phnom Penh</p>
             </div>
         </div>
-        <br>
-        <div class="card border" style="width: 800px; height: 300px; border-radius: 25px; ">
-            <div class="card-header">
-                <div class="col-md-50 d-flex" style="padding-top: 10px;" >
-                    <img src="/assets/images/image_1.jpg" class="square-img" style="height: 120px; width: 120px;">
-                    <div class="title" style="padding-left:3%;">
-                        <h4><b>Loan Zone.CO,Ltd</b></h4>
-                        <h6>Busines Developer Supervisor</h6>
-                        <a><b>Job Title:</b></a><br>
-                        <a style="font-size: x-small;">Type:  |Location:wwwwwwww|Date:21.jul.2024</a>
-                        <br>
-                        <a><b>Salary:200$-300$/month</b></a>
-                        <br>
-                        <a style="font-size: x-small;">experience:1year | Location:Pnom Penh</a>
-                    </div>
-                </div>
-                <br>
-                <div class="review">
-                    <p style="font-size: x-small;"><img src="/assets/Icons/clock.png" style="width: 20px;">10 hour ago</p>
-                    <p style="font-size: x-small;"><img src="/assets/Icons/education.png" style="width: 20px;">more than 1 year</p>
-                    <p style="font-size: x-small;"><img src="/assets/Icons/warehouse_maid.png" style="width: 20px;">200$-300$</p>
-                    <p style="font-size: x-small;"><img src="/assets/Icons/location.png" style="width: 20px;">Pnom Penh</p>
-                </div>
-
+        <div class="card-body text-primary">
+            <div class="d-flex justify-content-around">
+                <a style="color: black;" href="#"><img src="/assets/Icons/cv.png" style="width: 15px;"> CV</a>
+                <a style="color: black;" href="#"><img src="/assets/Icons/renew.png" style="width: 15px;"> Auto renew</a>
+                <a style="color: black;" href="#"><img src="/assets/Icons/cv_renew.png" style="width: 15px;"> Renew</a>
+                <a style="color: black;" href="#"><img src="/assets/Icons/edit.png" style="width: 15px;"> Edit</a>
+                <a style="color: black;" href="#"><img src="/assets/Icons/cv.png" style="width: 15px;"> Delete</a>
             </div>
-            <div class="card-body text-primary">
-                <div class="review">
-                    <a style="color: black;" href="#"><img src="/assets/Icons/cv.png" style="width: 15px;"> CV</a>
-                    <a style="color: black;" href="#"><img src="/assets/Icons/renew.png" style="width: 15px;"> Auto renew</a>
-                    <a style="color: black;" href="#"><img src="/assets/Icons/cv_renew.png" style="width: 15px;"> Renew</a>
-                    <a style="color: black;" href="#"><img src="/assets/Icons/edit.png" style="width: 15px;"> Edit</a>
-                    <a style="color: black;" href="#"><img src="/assets/Icons/cv.png" style="width: 15px;"> Delete</a>
-                </div>
-            </div>
-        </div>
         </div>
     </div>
-    <div class="A">
-  <footer class="footer">
-      <div class="footer-column">
-          <h3>How to Apply</h3>
-          <ul>
-              <li><a href="#">Application Process</a></li>
-              <li><a href="#">Requirements</a></li>
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Deadlines</a></li>
-          </ul>
-      </div>
-      <div class="footer-column">
-          <h3>Company</h3>
-          <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">News</a></li>
-          </ul>
-      </div>
-      <div class="footer-column">
-          <h3>Explore</h3>
-          <ul>
-              <li><a href="#">Programs</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Resources</a></li>
-          </ul>
-      </div>
-      <div class="footer-column">
-          <h3>Contact</h3>
-          <ul>
-              <li>Email: info@example.com</li>
-              <li>Phone: +123-456-7890</li>
-              <li>Address: 123 Main St, City, Country</li>
-          </ul>
-      </div>
-          <div class="social-icons">
-              <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-              <a href="#" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
-              <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-              <a href="tel:+1234567890" title="Phone"><i class="fas fa-phone"></i></a>
-          </div>
+
+
+
+<div class="card border">
+    <div class="card-header">
+        <div class="d-flex align-items-center" style="padding: 10px;">
+            <img src="/assets/images/image_1.jpg" class="square-img">
+            <div class="title" style="padding-left: 3%;">
+                <h4><b>Loan Zone.CO, Ltd</b></h4>
+                <h6>Business Developer Supervisor</h6>
+                <a><b>Job Title:</b></a><br>
+                <a style="font-size: x-small;">Type: | Location: Phnom Penh | Date: 21 Jul 2024</a>
+                <br>
+                <a><b>Salary: 200$-300$/month</b></a>
+                <br>
+                <a style="font-size: x-small;">Experience: 1 year | Location: Phnom Penh</a>
+            </div>
         </div>
-  </footer>
+        <div class="review d-flex justify-content-around">
+            <p style="font-size: x-small;"><img src="/assets/Icons/clock.png" style="width: 20px;">10 hours ago</p>
+            <p style="font-size: x-small;"><img src="/assets/Icons/education.png" style="width: 20px;">More than 1 year</p>
+            <p style="font-size: x-small;"><img src="/assets/Icons/warehouse_maid.png" style="width: 20px;">200$-300$</p>
+            <p style="font-size: x-small;"><img src="/assets/Icons/location.png" style="width: 20px;">Phnom Penh</p>
+        </div>
+    </div>
+    <div class="card-body text-primary">
+        <div class="d-flex justify-content-around">
+            <a style="color: black;" href="#"><img src="/assets/Icons/cv.png" style="width: 15px;"> CV</a>
+            <a style="color: black;" href="#"><img src="/assets/Icons/renew.png" style="width: 15px;"> Auto renew</a>
+            <a style="color: black;" href="#"><img src="/assets/Icons/cv_renew.png" style="width: 15px;"> Renew</a>
+            <a style="color: black;" href="#"><img src="/assets/Icons/edit.png" style="width: 15px;"> Edit</a>
+            <a style="color: black;" href="#"><img src="/assets/Icons/cv.png" style="width: 15px;"> Delete</a>
+        </div>
+    </div>
 </div>
-</div>
-  <script src="js/dropdown_menu_profile.js"></script>
+
+
+<footer class="footer">
+    <div class="footer-column">
+        <h3>How to Apply</h3>
+        <ul>
+            <li><a href="#">Application Process</a></li>
+            <li><a href="#">Requirements</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Deadlines</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Company</h3>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Explore</h3>
+        <ul>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Contact</h3>
+        <ul>
+            <li>Email: info@example.com</li>
+            <li>Phone: +123-456-7890</li>
+            <li>Address: 123 Main St, City, Country</li>
+        </ul>
+        <div class="social-icons">
+            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Telegram"><i class="fab fa-telegram-plane"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="tel:+1234567890" title="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+    </div>
+</footer>
+   <script src="../../js/dropdown_menu_profile.js"></script>
+  <script src="../../js/dropdown_menu_profile.js"></script>
    </body>  
 </html>
 

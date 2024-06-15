@@ -10,7 +10,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #003370;
-    padding: 10px 200px;
+    padding: 5px 200px;
     color: white;
     width: 100%;
     box-sizing: border-box;
@@ -18,8 +18,8 @@ body {
 
 .logo img {
     height: 70px;
-    padding-right : 50px;
-    width: 140px;
+    padding-right : 20px;
+    width: 200px;
 }
 
 .nav-menu {
@@ -50,7 +50,7 @@ body {
 
 .search-form {
     display: flex;
-    max-width: 400px;
+    max-width: 350px;
     margin: 20px auto;
     background-color: #003370;
     border: 1px solid #ccc;
