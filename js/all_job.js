@@ -14,7 +14,7 @@ const all_jobs = [
               "experience": "3 - 5 years",
               "category": "Administrator"
           },
-           {
+      {
                   "title": "Software Engineer",
                   "company": "ABC Tech",
                   "location": "New York, NY",
@@ -29,7 +29,7 @@ const all_jobs = [
                   "experience": "4 - 6 years",
                   "category": "Information Technology"
               },
-              {
+      {
                   "title": "Network Administrator",
                   "company": "Net Solutions",
                   "location": "San Jose, CA",
@@ -44,7 +44,7 @@ const all_jobs = [
                   "experience": "3 - 5 years",
                   "category": "Information Technology"
               },
-               {
+      {
                       "title": "Database Administrator",
                       "company": "Data Solutions",
                       "location": "Chicago, IL",
@@ -59,7 +59,7 @@ const all_jobs = [
                       "experience": "5 - 7 years",
                       "category": "Information Technology"
                   },
-                  {
+      {
                       "title": "Cloud Engineer",
                       "company": "CloudTech",
                       "location": "Seattle, WA",
@@ -73,7 +73,8 @@ const all_jobs = [
                       "position": "Engineer",
                       "experience": "4 - 6 years",
                       "category": "Information Technology"
-                  },{
+                  },
+      {
                         "title": "DevOps Engineer",
                         "company": "DevWorks",
                         "location": "Austin, TX",
@@ -88,7 +89,7 @@ const all_jobs = [
                         "experience": "4 - 6 years",
                         "category": "Information Technology"
                     },
-                    {
+      {
                         "title": "Cybersecurity Analyst",
                         "company": "SecureIT",
                         "location": "Boston, MA",
@@ -103,7 +104,7 @@ const all_jobs = [
                         "experience": "4 - 6 years",
                         "category": "Information Technology"
                     },
-                    {
+      {
                         "title": "IT Project Manager",
                         "company": "Project Solutions",
                         "location": "Denver, CO",
@@ -118,7 +119,7 @@ const all_jobs = [
                         "experience": "5 - 7 years",
                         "category": "Information Technology"
                     },
-                    {
+      {
                         "title": "Business Analyst",
                         "company": "BizTech",
                         "location": "Atlanta, GA",
@@ -133,13 +134,13 @@ const all_jobs = [
                         "experience": "4 - 6 years",
                         "category": "Information Technology"
                     },
-                    {
+      {
                         "title": "Office Administrator",
                         "company": "XYZ Corp",
                         "location": "San Francisco, CA",
                         "posted": "5 days ago",
                         "salary": "$50,000 - $60,000",
-                        "image": "assets/logos/com_8.png",
+                        "image": "../../assets/logos/com_8.png",
                         "description": "Manage office operations and support staff. Ensure efficient office procedures.",
                         "companyDescription": "XYZ Corp is a multinational company providing innovative solutions in various industries.",
                         "icon": "admin.png",

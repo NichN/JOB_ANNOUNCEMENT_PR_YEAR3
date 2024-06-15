@@ -1,144 +1,208 @@
-<link rel="stylesheet" type="text/css" href="/styles/sign_up.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+<!--    <link rel="stylesheet" type="text/css" href="/styles/login.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #8360c3, #2ebf91);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            width: 80px;
+        }
+        .header h1 {
+            margin: 10px 0;
+            color: #333;
+            font-size: 24px;
+        }
+        .header h4 {
+            margin: 5px 0;
+            color: #666;
+            font-size: 18px;
+        }
+        .header p {
+            color: #999;
+            font-size: 14px;
+        }
+        .form_wrap {
+            display: flex;
+            flex-direction: column;
+        }
+        .input_grp {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .input_wrap {
+            flex: 1;
+            margin: 0 5px;
+        }
+        label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input[type="text"], input[type="password"] {
+            width: calc(100% - 10px);
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
         .icon-input {
             position: relative;
         }
         .icon-input i {
             position: absolute;
-            right: 20px;
+            right: 15px;
             top: 50%;
             transform: translateY(-50%);
             color: #999;
             cursor: pointer;
         }
-        .icon-input input {
-            padding-right: 30px;
+        .btn-submit, .btn-signup {
+            text-align: center;
+            margin-top: 20px;
+
+        }
+        button {
+            background-color: #003370;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #249f77;
+        }
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+        .separator {
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+        }
+        .separator::before, .separator::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+        }
+        .separator::before {
+            margin-right: 10px;
+        }
+        .separator::after {
+            margin-left: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .footer a {
+            color: #2ebf91;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-<body> 
-    <div class="backround"></div> 
-    <div class="container">
+<body>
+<div class="container">
+    <div>
         <form class="form">
             <div class="header">
-                <img src="/assets/logos/logo_2.png" width="80">
+                <img src="/assets/logos/logo_2.png" alt="Logo">
                 <h1>Register</h1>
                 <h4>Welcome back!</h4>
                 <p>Please Enter Your Information:</p>
-                <div class="form_wrap">
-                    <div class="input_grp">
-                        <div class="input_wrap">
-                            <label for="lname">Last Name</label><br>
-                            <input type="text" id="lname">
-                        </div>
-                        <div class="input_wrap">
-                            <label for="fname">First Name</label><br>
-                            <input type="text" id="fname">
-                        </div>
+            </div>
+            <div class="form_wrap">
+                <div class="input_grp">
+                    <div class="input_wrap">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname">
                     </div>
-                    <div class="email">
-                        <br>
-                        <label for="email">Email Address</label><br>
-                        <input type="text" id="email">
+                    <div class="input_wrap">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname">
                     </div>
-                    <div class="password">
-                        <br>
-                        <label for="password">Password</label><br>
-                        <div class="icon-input">
-                            <i class="fas fa-eye toggle-password" onclick="togglePassword('password', 'togglePassword1')"></i>
-                            <input type="password" id="password" placeholder="password">
-                        </div>
-                    </div>
-                    <div class="password">
-                        <br>
-                        <label for="confirm-password">Confirm Password</label><br>
-                        <div class="icon-input">
-                            <i class="fas fa-eye toggle-password" onclick="togglePassword('confirm-password', 'togglePassword2')"></i>
-                            <input type="password" id="confirm-password" placeholder="Comfirm Password">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="btn-submit" style="text-align: center;">
-                        <button style="background-color: #003370;"><a href="/web_page/verify_code.html">Submit</a></button>
-                    </div>
-                    <p>___________________________or___________________________</p>
-                    <div>
-                        <a href="#">already have account?</a>
-                    </div>
-                    <div class="btn-signup" style="text-align: center;">
-                        <button style="background-color: #003370;"><a href="/web_page/login.html">Login</a></button>
-                    </div>                
+                </div>
+                <div class="input_wrap">
+                    <label for="email">Email Address</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="input_wrap icon-input">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                    <i class="fas fa-eye toggle-password" onclick="togglePassword('password', 'togglePassword1')" id="togglePassword1"></i>
+                </div>
+                <div class="input_wrap icon-input">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+                    <i class="fas fa-eye toggle-password" onclick="togglePassword('confirm-password', 'togglePassword2')" id="togglePassword2"></i>
+                </div>
+                <div class="btn-submit">
+                    <button type="submit">Submit</button>
+                </div>
+                <div class="separator">or</div>
+                <div class="footer">
+                    <a href="login.html">Already have an account?</a>
+                </div>
+                <div class="btn-signup">
+                    <button><a href="/web_page/login.html">Login</a></button>
                 </div>
             </div>
         </form>
+
     </div>
-    <script>
-        function togglePassword(id, toggleIconId) {
-            const input = document.getElementById(id);
-            const icon = document.getElementById(toggleIconId);
-            
-            if (input.type === "password") {
-                input.type = "text";
-                icon.classList.remove("fa-eye");
-                icon.classList.add("fa-eye-slash");
-            } else {
-                input.type = "password";
-                icon.classList.remove("fa-eye-slash");
-                icon.classList.add("fa-eye");
-            }
-        }
-    </script>
-=======
-    <link rel="stylesheet" type="text/css" href="../styles/sign_up.css">
-</head>
-<body>
-<div class="background"></div>
-<div class="container">
-    <form class="form">
-        <div class="header">
-            <img src="../assets/logos/logo_2.png" width="80" alt="Logo">
-            <h1>Register</h1>
-            <h4>Welcome back!</h4>
-            <p>Please Enter Your Information:</p>
-        </div>
-        <div class="form_wrap">
-            <div class="input_grp">
-                <div class="input_wrap">
-                    <label for="flastname">Last Name</label><br>
-                    <input type="text" id="flastname">
-                </div>
-                <div class="input_wrap">
-                    <label for="ffirstname">First Name</label><br>
-                    <input type="text" id="ffirstname">
-                </div>
-            </div>
-            <div class="email">
-                <br>
-                <label for="email">Email Address</label><br>
-                <input type="text" id="email">
-            </div>
-            <div class="password">
-                <br>
-                <label for="password">Password</label><br>
-                <input type="password" id="password">
-            </div>
-            <div class="confirm">
-                <br>
-                <label for="compassword">Confirm Password</label><br>
-                <input type="password" id="compassword">
-            </div>
-            <br>
-            <div class="btn-submit" style="text-align: center;">
-                <button style="background-color: #003370;"><a href="verify_code.html">Submit</a></button>
-            </div>
-            <p>___________________________ or ___________________________</p>
-            <div>
-                <a href="#">Already have an account?</a>
-            </div>
-            <div class="btn-signup" style="text-align: center;">
-                <button style="background-color: #003370;"><a href="login.html">Login</a></button>
-            </div>
-        </div>
-    </form>
+
+
 </div>
+<script>
+    function togglePassword(id, toggleIconId) {
+        const input = document.getElementById(id);
+        const icon = document.getElementById(toggleIconId);
+
+        if (input.type === "password") {
+            input.type = "text";
+            icon.classList.remove("fa-eye");
+            icon.classList.add("fa-eye-slash");
+        } else {
+            input.type = "password";
+            icon.classList.remove("fa-eye-slash");
+            icon.classList.add("fa-eye");
+        }
+    }
+</script>
+</body>
+</html>

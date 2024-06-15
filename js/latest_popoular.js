@@ -45,7 +45,6 @@ const latest_jobs = [
                       "category": "Information Technology"
                   },
 
-
 ];
 
 const popular_jobs = [
