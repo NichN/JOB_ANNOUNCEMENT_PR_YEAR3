@@ -3,50 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/styles/login.css">  
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="/styles/login.css">
+  <style>
+      .button{
+    text-align: center;
+}
+.button input{
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+    background-color: #003370;
+    color: white;
+  }
+
+        .btn-submit button{
+    border-radius: 5px;
+    height: 30px;
+    width: 70px;
+
+  }
+  .btn-submit button a{
+    text-decoration: none;
+    color:#fff;
+   }
+
+  </style>
 </head>
 <body>
-    <div class="backround">
-        <h1></h1>
+<div class="background">
+    <div class="container"  style="width:70%">
+        <div class="form-container">
+            <form>
+                <div class="header">
+                    <img src="/assets/logos/logo_2.png" width="80" alt="Logo">
+                </div>
+                <h1>Login to your account</h1>
+                <h4>Welcome back!</h4>
+                <div class="input-container">
+                    <p><b>Login with your email</b></p>
+                    <input type="text" placeholder="Email">
+                    <br>
+                    <input class="password" type="password" placeholder="Password">
+                </div>
+                <div class="checkform">
+                    <input type="checkbox" name="remember"><b> Remember me</b>
+                    <a href="#" class="forgot-password" style="padding-left:250px">Forgot password?</a>
+                </div>
+                <div class="btn-submit" style="text-align: center;">
+                    <button style="background-color: #003370;"><a href="verify_code.html">Submit</a></button>
+                </div>
+                <div class="confirm">
+                    <span>Don't have an account?</span>
+                    <a href="sign_up.html">Create Account</a>
+                </div>
+            </form>
+
+        </div>
+        <div class="image-container"  >
+            <img src="/assets/images/4171344.jpg" style="width : 600px;height:600px">
+        </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <form >
-                    <div class="header">
-                <img src="/assets/logos/logo_2.png" width="80">
-                 </div>
-                    <h1>Login into your account</h1>
-                    <h4>welcome back!</h4>
-                    <div class="input-contaner">
-                        <p><b>Login with your email</b></p>
-                        <input type="text" placeholder="email">
-                        <br>
-                        <br>
-                        <input class="password"type="password" placeholder="password">
-                    </div>
-                    <br>
-                    <div class="checkform">
-                        <input type="checkbox" name="1"><b>Remember me?
-                        <a href="#">forgot password</a>
-                    </div>
-                    <br>
-                    <div class="btn-login" style="text-align: center;">
-                    <button style="background-color: #003370;"><a href="/index.html">Login</a></button>
-                   </div>
-                   <br>
-                    <div class="comfirm"><a>Don't have an account?</a>
-                        <a href="/web_page/sign_up.html"> create  Account</a>
-                    </div>
-                </form>    
-            </div>
-            <div class="col-6">
-               <div class="img">
-                <p></p>
-               </div>
-            </div>
-        </div>
-        </div>
+</div>
 </body>
 </html>

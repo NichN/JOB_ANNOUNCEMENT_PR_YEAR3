@@ -4,55 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/styles/sign_up.css">
+    <link rel="stylesheet" type="text/css" href="../styles/sign_up.css">
 </head>
-<body> 
-    <div class="backround"></div> 
-    <div class="container">
-        <form class="form">
-            <div class="header">
-            <img src="/assets/logos/logo_2.png" width="80">
+<body>
+<div class="background"></div>
+<div class="container">
+    <form class="form">
+        <div class="header">
+            <img src="../assets/logos/logo_2.png" width="80" alt="Logo">
             <h1>Register</h1>
             <h4>Welcome back!</h4>
             <p>Please Enter Your Information:</p>
-            <div class="form_wrap">
-                <div class="input_grp">
-                  <div class="input_wrap">
-                    <label for="lname">Last Name</label><br>
-                    <input type="text" id="fname">
-                  </div>
-                  <div class="input_wrap">
-                    <label for="fname">First Name</label><br>
-                    <input type="text" id="fname">
-                  </div>
+        </div>
+        <div class="form_wrap">
+            <div class="input_grp">
+                <div class="input_wrap">
+                    <label for="flastname">Last Name</label><br>
+                    <input type="text" id="flastname">
                 </div>
-                <div class="email">
-                    <br>
-                    <label for="email">Email Address</label><br>
-                    <input type="text">
+                <div class="input_wrap">
+                    <label for="ffirstname">First Name</label><br>
+                    <input type="text" id="ffirstname">
                 </div>
-                <div class="password">
-                    <br>
-                    <label for="text">Password</label><br>
-                    <input type="text">
-                </div>
-                <div class="comfirm">
-                    <br>
-                    <label for="text">Comfirm Password</label><br>
-                    <input type="text">
-                </div>
+            </div>
+            <div class="email">
                 <br>
-                <div class="btn-submit" style="text-align: center;">
-                    <button style="background-color: #003370;"><a href="/web_page/verify_code.html">Submit</a></button>
-                </div>
-                <p>___________________________or___________________________</p>
-                <div>
-                    <a href="#">already have account?</a>
-                </div>
-                <div class="btn-signup" style="text-align: center;">
-                    <button style="background-color: #003370;"><a href="/web_page/login.html">Login</a></button>
-                </div>                
-        </form>
-    </div> 
+                <label for="email">Email Address</label><br>
+                <input type="text" id="email">
+            </div>
+            <div class="password">
+                <br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password">
+            </div>
+            <div class="confirm">
+                <br>
+                <label for="compassword">Confirm Password</label><br>
+                <input type="password" id="compassword">
+            </div>
+            <br>
+            <div class="btn-submit" style="text-align: center;">
+                <button style="background-color: #003370;"><a href="verify_code.html">Submit</a></button>
+            </div>
+            <p>___________________________ or ___________________________</p>
+            <div>
+                <a href="#">Already have an account?</a>
+            </div>
+            <div class="btn-signup" style="text-align: center;">
+                <button style="background-color: #003370;"><a href="login.html">Login</a></button>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>

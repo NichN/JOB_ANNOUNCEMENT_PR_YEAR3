@@ -5,7 +5,7 @@ const latest_jobs = [
           "location": "Denver, CO",
           "posted": "3 days ago",
           "salary": "$55,000 - $70,000",
-          "image": "assets/logos/logo_1.1.png",
+          "image": "assets/logos/com_2.png",
           "description": "Support project managers in planning and executing projects. Maintain project documentation.",
           "companyDescription": "ProjManage offers project management and administrative support services.",
           "icon": "admin.png",
@@ -20,7 +20,7 @@ const latest_jobs = [
               "location": "New York, NY",
               "posted": "2 days ago",
               "salary": "$80,000 - $100,000",
-              "image": "assets/logos/logo_1.1.png",
+              "image": "assets/logos/com_9.jpeg",
               "description": "Develop and maintain software applications. Collaborate with cross-functional teams.",
               "companyDescription": "ABC Tech is a leading tech company specializing in software development and IT consulting. We offer a dynamic and inclusive work environment.",
               "icon": "it.png",
@@ -35,7 +35,7 @@ const latest_jobs = [
               "location": "San Jose, CA",
               "posted": "1 week ago",
               "salary": "$70,000 - $85,000",
-              "image": "assets/logos/logo_1.1.png",
+              "image": "assets/logos/com_8.png",
               "description": "Manage and maintain network infrastructure. Ensure network security and performance.",
               "companyDescription": "Net Solutions is a leading provider of network services and solutions.",
               "icon": "it.png",
@@ -55,7 +55,7 @@ const popular_jobs = [
              "location": "Denver, CO",
              "posted": "3 days ago",
              "salary": "$55,000 - $70,000",
-             "image": "assets/logos/logo_1.1.png",
+             "image": "assets/logos/com_6.jpeg",
              "description": "Support project managers in planning and executing projects. Maintain project documentation.",
              "companyDescription": "ProjManage offers project management and administrative support services.",
              "icon": "admin.png",
@@ -70,7 +70,7 @@ const popular_jobs = [
                  "location": "New York, NY",
                  "posted": "2 days ago",
                  "salary": "$80,000 - $100,000",
-                 "image": "assets/logos/logo_1.1.png",
+                 "image": "assets/logos/com_10.png",
                  "description": "Develop and maintain software applications. Collaborate with cross-functional teams.",
                  "companyDescription": "ABC Tech is a leading tech company specializing in software development and IT consulting. We offer a dynamic and inclusive work environment.",
                  "icon": "it.png",
@@ -85,7 +85,7 @@ const popular_jobs = [
                  "location": "San Jose, CA",
                  "posted": "1 week ago",
                  "salary": "$70,000 - $85,000",
-                 "image": "assets/logos/logo_1.1.png",
+                 "image": "assets/logos/com_7.jpeg",
                  "description": "Manage and maintain network infrastructure. Ensure network security and performance.",
                  "companyDescription": "Net Solutions is a leading provider of network services and solutions.",
                  "icon": "it.png",
@@ -106,8 +106,9 @@ latest_jobs.forEach(job => {
 
     jobCard.innerHTML = `
         <img src="${job.image}" alt="${job.company}">
+
         <div class="card-content">
-        <a href="job_detail.html?title=${encodeURIComponent(job.title)}" style= "text-decoration: none;">
+
          <h3>${job.title}</h3>
         <div class="icon-text">
 
