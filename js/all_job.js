@@ -139,7 +139,7 @@ const all_jobs = [
                         "location": "San Francisco, CA",
                         "posted": "5 days ago",
                         "salary": "$50,000 - $60,000",
-                        "image": "../../assets/logos/com_8.png",
+                        "image": "assets/logos/com_8.png",
                         "description": "Manage office operations and support staff. Ensure efficient office procedures.",
                         "companyDescription": "XYZ Corp is a multinational company providing innovative solutions in various industries.",
                         "icon": "admin.png",

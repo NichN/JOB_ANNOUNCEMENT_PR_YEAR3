@@ -13,10 +13,8 @@ document.addEventListener('DOMContentLoaded', function () {
         jobItem.className = 'job-item';
         jobItem.innerHTML = `
         <a href="job_detail.html?title=${encodeURIComponent(job.title)}" style="text-decoration : none;">
-
-
                     <img src="${job.image}" alt="${job.title}">
-                      <h2 style = "padding-top : 10px;color : black">${job.title}</h2>
+                     <h2 style = "padding-top : 10px;color : black">${job.title}</h2>
                     <p><strong>Company:</strong> ${job.company}</p>
                     <p><strong>Location:</strong> ${job.location}</p>
                     <p><strong>Posted:</strong> ${job.posted}</p>
@@ -26,8 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     <p><strong>Position:</strong> ${job.position}</p>
                      <p>${job.description}</p>
         </a>
-
-        
         `;
         return jobItem;
     }
