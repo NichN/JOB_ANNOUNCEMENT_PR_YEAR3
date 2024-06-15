@@ -1,9 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="/styles/sign_up.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .icon-input {
+            position: relative;
+        }
+        .icon-input i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+            cursor: pointer;
+        }
+        .icon-input input {
+            padding-right: 30px;
+        }
+    </style>
+</head>
+<body> 
+    <div class="backround"></div> 
+    <div class="container">
+        <form class="form">
+            <div class="header">
+                <img src="/assets/logos/logo_2.png" width="80">
+                <h1>Register</h1>
+                <h4>Welcome back!</h4>
+                <p>Please Enter Your Information:</p>
+                <div class="form_wrap">
+                    <div class="input_grp">
+                        <div class="input_wrap">
+                            <label for="lname">Last Name</label><br>
+                            <input type="text" id="lname">
+                        </div>
+                        <div class="input_wrap">
+                            <label for="fname">First Name</label><br>
+                            <input type="text" id="fname">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <br>
+                        <label for="email">Email Address</label><br>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="password">
+                        <br>
+                        <label for="password">Password</label><br>
+                        <div class="icon-input">
+                            <i class="fas fa-eye toggle-password" onclick="togglePassword('password', 'togglePassword1')"></i>
+                            <input type="password" id="password" placeholder="password">
+                        </div>
+                    </div>
+                    <div class="password">
+                        <br>
+                        <label for="confirm-password">Confirm Password</label><br>
+                        <div class="icon-input">
+                            <i class="fas fa-eye toggle-password" onclick="togglePassword('confirm-password', 'togglePassword2')"></i>
+                            <input type="password" id="confirm-password" placeholder="Comfirm Password">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btn-submit" style="text-align: center;">
+                        <button style="background-color: #003370;"><a href="/web_page/verify_code.html">Submit</a></button>
+                    </div>
+                    <p>___________________________or___________________________</p>
+                    <div>
+                        <a href="#">already have account?</a>
+                    </div>
+                    <div class="btn-signup" style="text-align: center;">
+                        <button style="background-color: #003370;"><a href="/web_page/login.html">Login</a></button>
+                    </div>                
+                </div>
+            </div>
+        </form>
+    </div>
+    <script>
+        function togglePassword(id, toggleIconId) {
+            const input = document.getElementById(id);
+            const icon = document.getElementById(toggleIconId);
+            
+            if (input.type === "password") {
+                input.type = "text";
+                icon.classList.remove("fa-eye");
+                icon.classList.add("fa-eye-slash");
+            } else {
+                input.type = "password";
+                icon.classList.remove("fa-eye-slash");
+                icon.classList.add("fa-eye");
+            }
+        }
+    </script>
+=======
     <link rel="stylesheet" type="text/css" href="../styles/sign_up.css">
 </head>
 <body>
@@ -56,5 +142,3 @@
         </div>
     </form>
 </div>
-</body>
-</html>
