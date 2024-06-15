@@ -8,23 +8,11 @@ body {
 }
 
 /* Logo Styling */
-.logo img {
-    width: 70px;
-    height: 70px;
-}
+
 
 /* Navigation Menu Styling */
-.menu {
-    flex-grow: 1;
-    text-align: center;
-}
 
-.menu a {
-    margin: 0 20px;
-    text-decoration: none;
-    color: white;
-    padding: 10px 0;
-}
+
 
 /* Footer Styling */
 .footer {
@@ -194,11 +182,4 @@ li img {
     padding-left: 55%;
     justify-content: space-between;
     display: flex;
-}
-
-.btn-postjob button {
-    background-color: red;
-    height: 40px;
-    width: 120px;
-    border-radius: 50px;
 }

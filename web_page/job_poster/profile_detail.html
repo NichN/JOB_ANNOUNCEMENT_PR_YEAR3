@@ -15,20 +15,42 @@
     </style>
 </head>
 <body>
-    <div class="navbar">
+    <div class="navbar" style="padding-left:200px;padding-right:200px">
         <div class="logo">
-            <img src="../../assets/logos/logo_2.png" alt="Logo">
+            <img onclick="window.history.back()" src="../../assets/logos/tranparent_logo_2.png" alt="Logo">
         </div>
-        <div class="menu">
-            <a href="../../index.html">HOME</a>
-            <a href="web_page/employee/all_job.html">JOB</a>
-            <a href="contact_us.html">CONTACT</a>
-            <a href="about_us.html">ABOUT US</a>
+        <div class="nav-menu">
+            <a href="../../index.html">Home</a>
+            <a href="../../web_page/employee/all_job.html">Job</a>
+            <a href="../../web_page/employee/save_job.html">Save</a>
+            <a href="../../web_page/employee/about_us.html">About</a>
+            <a href="../../web_page/employee/contact_us.html">Contact Us</a>
         </div>
-        <div class="btnlogin-logout">
-            <button><a href="/web_page/login.html" style="text-decoration: none;color: black;">Login</a></button>
-            <button><a href="/web_page/sign_up.html" style="text-decoration: none;color: black;">Register</a></button>
+        <form id="form" role="search" class="search-form">
+            <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search through site content">
+            <button type="submit">Search</button>
+        </form>
+        <div class="user-section">
+            <button id="loginBtn" class="login-btn">Login</button>
+            <button id="logoutBtn" class="logout-btn">Logout</button>
+            <div class="profile-icon">
+                <button class="profile-btn">
+                    <img src="../../assets/images/profiles.png" alt="Profile Icon">
+                </button>
+                <div class="dropdown-content">
+                    <a href="../../web_page/job_poster/employee_profile.html">My Profile</a>
+                    <div class="sub-dropdown">
+                        <a href="#" class="sub-dropbtn">Post Job</a>
+                        <div class="sub-dropdown-content">
+                            <a href="../../web_page/job_poster/company_profile.html">Enterprise</a>
+                            <a href="../../web_page/job_poster/talent_pool.html">Talent Pool</a>
+                        </div>
+                    </div>
+                    <a href="../../web_page/sign_up.html">Logout</a>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
     <div class="backround">
     </div> 
